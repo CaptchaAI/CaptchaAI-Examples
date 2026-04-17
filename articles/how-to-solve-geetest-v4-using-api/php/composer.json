@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/geetest-v4-example",
+    "description": "Solve GeeTest v4 using CaptchaAI API",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

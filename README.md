@@ -64,6 +64,8 @@ CaptchaAI-Examples/
 | [how-to-solve-bls-captcha-step-by-step](articles/how-to-solve-bls-captcha-step-by-step/) | BLS CAPTCHA | Python, Node.js, PHP, Go, Java, C#, Ruby, Rust, Kotlin, Bash | [Blog](https://blog.captchaai.com/how-to-solve-bls-captcha-step-by-step) |
 | [image-captcha-solving-using-api](articles/image-captcha-solving-using-api/) | Image/OCR CAPTCHA | Python, Node.js, PHP, Go, Java, C#, Ruby, Rust, Kotlin, Bash | [Blog](https://blog.captchaai.com/image-captcha-solving-using-api) |
 | [how-to-solve-grid-image-captcha-automatically](articles/how-to-solve-grid-image-captcha-automatically/) | Grid Image CAPTCHA | Python, Node.js, PHP, Go, Java, C#, Ruby, Rust, Kotlin, Bash | [Blog](https://blog.captchaai.com/how-to-solve-grid-image-captcha-automatically) |
+| [how-to-solve-hcaptcha-using-api](articles/how-to-solve-hcaptcha-using-api/) | hCaptcha | Python, Node.js, PHP, Go, Java, C#, Ruby, Rust, Kotlin, Bash | [Blog](https://blog.captchaai.com/how-to-solve-hcaptcha-using-api) |
+| [how-to-solve-geetest-v4-using-api](articles/how-to-solve-geetest-v4-using-api/) | GeeTest v4 | Python, Node.js, PHP, Go, Java, C#, Ruby, Rust, Kotlin, Bash | [Blog](https://blog.captchaai.com/how-to-solve-geetest-v4-using-api) |
 
 ## How each example works
 
