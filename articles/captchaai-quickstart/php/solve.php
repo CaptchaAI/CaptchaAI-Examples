@@ -27,12 +27,22 @@ $balanceErrors = ['ERROR_ZERO_BALANCE'];
 $inputErrors = ['ERROR_PAGEURL', 'ERROR_WRONG_GOOGLEKEY', 'ERROR_BAD_PARAMETERS', 'ERROR_BAD_TOKEN_OR_PAGEURL'];
 $transientErrors = ['ERROR_SERVER_ERROR', 'ERROR_INTERNAL_SERVER_ERROR'];
 $solveErrors = ['ERROR_CAPTCHA_UNSOLVABLE'];
+$proxyErrors = ['ERROR_BAD_PROXY', 'ERROR_PROXY_CONNECTION_FAILED'];
 
 // --- Validate configuration ---
 if (empty($apiKey) || $apiKey === 'YOUR_API_KEY') {
     echo "[!] ERROR: CAPTCHAAI_API_KEY is not set.\n";
     echo "    Copy .env.example to .env and add your real API key.\n";
     exit(1);
+}
+if (empty($sitekey) || $sitekey === 'YOUR_SITE_KEY') {
+    echo "[!] ERROR: CAPTCHA_SITEKEY is not set.\n";
+    echo "    Add the Turnstile sitekey from your target page to .env\n";
+    exit(1);
+}
+if (empty($pageurl) || $pageurl === 'https://example.com/login') {
+    echo "[!] WARNING: CAPTCHA_PAGEURL may not be set correctly.\n";
+    echo "    Make sure it points to the actual target page.\n";
 }
 
 // --- Submit task ---
@@ -63,6 +73,9 @@ if (($submitData['status'] ?? 0) !== 1) {
     } elseif (in_array($error, $inputErrors)) {
         echo "[!] Input error: $error\n";
         echo "    Verify your sitekey and page URL are correct.\n";
+    } elseif (in_array($error, $proxyErrors)) {
+        echo "[!] Proxy error: $error\n";
+        echo "    Check your proxy configuration or try a different proxy.\n";
     } else {
         echo "[!] Submission failed: $error\n";
     }
@@ -108,7 +121,7 @@ while ($elapsed < $maxTimeout) {
         echo "[+] Full token length: " . strlen($token) . " characters\n";
         echo "\n";
         echo "Next step: inject this token into the target page's\n";
-        echo "g-recaptcha-response hidden field and submit the form.\n";
+        echo "cf-turnstile-response hidden field and submit the form.\n";
         exit(0);
     }
 
@@ -132,6 +145,12 @@ while ($elapsed < $maxTimeout) {
     if (in_array($error, $solveErrors)) {
         echo "[!] Solve error: $error\n";
         echo "    The CAPTCHA could not be solved. Verify parameters and retry.\n";
+        exit(1);
+    }
+
+    if (in_array($error, $proxyErrors)) {
+        echo "[!] Proxy error: $error\n";
+        echo "    Check your proxy configuration or try a different proxy.\n";
         exit(1);
     }
 

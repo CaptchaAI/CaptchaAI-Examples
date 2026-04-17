@@ -23,20 +23,35 @@ CaptchaAI-Examples/
     {slug}/
       README.md                 # Setup, usage, expected output, troubleshooting
       .env.example              # Required environment variables
+      .gitignore                # Excludes .env and build artifacts
       python/                   # Python implementation
       node/                     # Node.js implementation
       php/                      # PHP implementation
+      go/                       # Go implementation
+      java/                     # Java implementation
+      csharp/                   # C# implementation
+      ruby/                     # Ruby implementation
+      rust/                     # Rust implementation
+      kotlin/                   # Kotlin implementation
+      bash/                     # Bash/cURL implementation
   templates/                    # Starter templates for new examples
     python-basic/
     node-basic/
     php-basic/
+    go-basic/
+    java-basic/
+    csharp-basic/
+    ruby-basic/
+    rust-basic/
+    kotlin-basic/
+    bash-basic/
 ```
 
 ## Examples
 
 | Example | CAPTCHA Type | Languages | Article |
 |---------|-------------|-----------|---------|
-| [captchaai-quickstart](articles/captchaai-quickstart/) | reCAPTCHA v2 | Python, Node.js, PHP | [Blog](https://blog.captchaai.com/captchaai-quickstart) |
+| [captchaai-quickstart](articles/captchaai-quickstart/) | Cloudflare Turnstile | Python, Node.js, PHP, Go, Java, C#, Ruby, Rust, Kotlin, Bash | [Blog](https://blog.captchaai.com/captchaai-quickstart) |
 
 _More examples are added as articles are published. Check back regularly._
 
@@ -52,7 +67,7 @@ Every example follows the same pattern:
 ## Prerequisites
 
 - A CaptchaAI account with API key ([sign up](https://captchaai.com))
-- Python 3.8+, Node.js 16+, or PHP 8.0+ depending on the example
+- One or more of: Python 3.8+, Node.js 16+, PHP 8.0+, Go 1.21+, Java 11+, .NET 8+, Ruby 3.0+, Rust 1.70+, Kotlin 1.9+, or Bash with curl and jq
 
 ## Environment setup
 
@@ -76,6 +91,7 @@ Every example handles these error categories:
 | Input | `ERROR_PAGEURL`, `ERROR_WRONG_GOOGLEKEY` | Parameter validation message |
 | Transient | `ERROR_SERVER_ERROR` | Automatic retry with backoff |
 | Solve | `ERROR_CAPTCHA_UNSOLVABLE` | Log and suggest parameter check |
+| Proxy | `ERROR_BAD_PROXY`, `ERROR_PROXY_CONNECTION_FAILED` | Message to check proxy config |
 | Polling | `CAPCHA_NOT_READY` | Normal — keeps polling |
 
 ## Contributing

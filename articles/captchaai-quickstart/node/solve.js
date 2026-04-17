@@ -24,6 +24,7 @@ const BALANCE_ERRORS = new Set(["ERROR_ZERO_BALANCE"]);
 const INPUT_ERRORS = new Set(["ERROR_PAGEURL", "ERROR_WRONG_GOOGLEKEY", "ERROR_BAD_PARAMETERS", "ERROR_BAD_TOKEN_OR_PAGEURL"]);
 const TRANSIENT_ERRORS = new Set(["ERROR_SERVER_ERROR", "ERROR_INTERNAL_SERVER_ERROR"]);
 const SOLVE_ERRORS = new Set(["ERROR_CAPTCHA_UNSOLVABLE"]);
+const PROXY_ERRORS = new Set(["ERROR_BAD_PROXY", "ERROR_PROXY_CONNECTION_FAILED"]);
 
 function sleep(seconds) {
   return new Promise((resolve) => setTimeout(resolve, seconds * 1000));
@@ -34,6 +35,15 @@ function validateConfig() {
     console.log("[!] ERROR: CAPTCHAAI_API_KEY is not set.");
     console.log("    Copy .env.example to .env and add your real API key.");
     process.exit(1);
+  }
+  if (!sitekey || sitekey === "YOUR_SITE_KEY") {
+    console.log("[!] ERROR: CAPTCHA_SITEKEY is not set.");
+    console.log("    Add the Turnstile sitekey from your target page to .env");
+    process.exit(1);
+  }
+  if (!pageurl || pageurl === "https://example.com/login") {
+    console.log("[!] WARNING: CAPTCHA_PAGEURL may not be set correctly.");
+    console.log("    Make sure it points to the actual target page.");
   }
 }
 
@@ -68,6 +78,9 @@ async function submitTask() {
     } else if (INPUT_ERRORS.has(error)) {
       console.log(`[!] Input error: ${error}`);
       console.log("    Verify your sitekey and page URL are correct.");
+    } else if (PROXY_ERRORS.has(error)) {
+      console.log(`[!] Proxy error: ${error}`);
+      console.log("    Check your proxy configuration or try a different proxy.");
     } else {
       console.log(`[!] Submission failed: ${error}`);
     }
@@ -132,6 +145,12 @@ async function pollResult(taskId) {
       process.exit(1);
     }
 
+    if (PROXY_ERRORS.has(error)) {
+      console.log(`[!] Proxy error: ${error}`);
+      console.log("    Check your proxy configuration or try a different proxy.");
+      process.exit(1);
+    }
+
     console.log(`[!] Unexpected error: ${error}`);
     process.exit(1);
   }
@@ -148,7 +167,7 @@ async function main() {
   console.log(`[+] Full token length: ${token.length} characters`);
   console.log();
   console.log("Next step: inject this token into the target page's");
-  console.log("g-recaptcha-response hidden field and submit the form.");
+  console.log("cf-turnstile-response hidden field and submit the form.");
 }
 
 main();

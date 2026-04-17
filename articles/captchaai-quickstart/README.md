@@ -2,7 +2,7 @@
 
 Full working example for solving Cloudflare Turnstile using the CaptchaAI API.
 
-**Languages:** Python, Node.js, PHP
+**Languages:** Python, Node.js, PHP, Go, Java, C#, Ruby, Rust, Kotlin, Bash
 
 ## Related article
 
@@ -13,7 +13,7 @@ This example accompanies the blog article:
 
 - A CaptchaAI account with API key ([get one here](https://captchaai.com))
 - A target page with Cloudflare Turnstile for testing
-- Python, Node.js, PHP installed on your system
+- One or more of: Python 3.8+, Node.js 16+, PHP 8.0+, Go 1.21+, Java 11+, .NET 8+, Ruby 3.0+, Rust 1.70+, Kotlin 1.9+, or Bash with curl and jq
 
 ## Setup
 
@@ -60,6 +60,72 @@ composer install
 cp ../.env.example ../.env
 # Edit ../.env with your API key and target page details
 php solve.php
+```
+
+### Go
+
+```bash
+cd go
+cp ../.env.example ../.env
+# Edit ../.env with your API key and target page details
+go run solve.go
+```
+
+### Java
+
+```bash
+cd java
+cp ../.env.example ../.env
+# Edit ../.env with your API key and target page details
+javac Solve.java
+java Solve
+```
+
+### C#
+
+```bash
+cd csharp
+cp ../.env.example ../.env
+# Edit ../.env with your API key and target page details
+dotnet run
+```
+
+### Ruby
+
+```bash
+cd ruby
+cp ../.env.example ../.env
+# Edit ../.env with your API key and target page details
+ruby solve.rb
+```
+
+### Rust
+
+```bash
+cd rust
+cp ../.env.example ../.env
+# Edit ../.env with your API key and target page details
+cargo run
+```
+
+### Kotlin
+
+```bash
+cd kotlin
+cp ../.env.example ../.env
+# Edit ../.env with your API key and target page details
+kotlinc solve.kt -include-runtime -d solve.jar
+java -jar solve.jar
+```
+
+### Bash
+
+```bash
+cd bash
+cp ../.env.example ../.env
+# Edit ../.env with your API key and target page details
+chmod +x solve.sh
+./solve.sh
 ```
 
 ## Configuration
@@ -116,7 +182,7 @@ php solve.php
 
 **Token received but form submission fails**
 - The token may have expired (tokens are valid for ~120 seconds)
-- Make sure you are injecting the token into the correct form field (`g-recaptcha-response` for reCAPTCHA)
+- Make sure you are injecting the token into the correct form field (`cf-turnstile-response` for Turnstile)
 - Some sites require additional cookies or headers
 
 ## API documentation

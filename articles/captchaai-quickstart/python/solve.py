@@ -40,6 +40,13 @@ def validate_config() -> None:
         print("[!] ERROR: CAPTCHAAI_API_KEY is not set.")
         print("    Copy .env.example to .env and add your real API key.")
         sys.exit(1)
+    if not CAPTCHA_SITEKEY or CAPTCHA_SITEKEY == "YOUR_SITE_KEY":
+        print("[!] ERROR: CAPTCHA_SITEKEY is not set.")
+        print("    Add the Turnstile sitekey from your target page to .env")
+        sys.exit(1)
+    if not CAPTCHA_PAGEURL or CAPTCHA_PAGEURL == "https://example.com/login":
+        print("[!] WARNING: CAPTCHA_PAGEURL may not be set correctly.")
+        print("    Make sure it points to the actual target page.")
 
 
 def submit_task() -> str:
@@ -73,6 +80,9 @@ def submit_task() -> str:
         elif error in INPUT_ERRORS:
             print(f"[!] Input error: {error}")
             print("    Verify your sitekey and page URL are correct.")
+        elif error in PROXY_ERRORS:
+            print(f"[!] Proxy error: {error}")
+            print("    Check your proxy configuration or try a different proxy.")
         else:
             print(f"[!] Submission failed: {error}")
         sys.exit(1)
@@ -137,6 +147,11 @@ def poll_result(task_id: str) -> str:
             print("    The CAPTCHA could not be solved. Verify parameters and retry.")
             sys.exit(1)
 
+        if error in PROXY_ERRORS:
+            print(f"[!] Proxy error: {error}")
+            print("    Check your proxy configuration or try a different proxy.")
+            sys.exit(1)
+
         print(f"[!] Unexpected error: {error}")
         sys.exit(1)
 
@@ -151,8 +166,8 @@ def main() -> None:
     print(f"[+] Solved! Token: {token[:50]}...")
     print(f"[+] Full token length: {len(token)} characters")
     print()
-    print("Next step: inject this token into the target page\'s")
-    print("g-recaptcha-response hidden field and submit the form.")
+    print("Next step: inject this token into the target page's")
+    print("cf-turnstile-response hidden field and submit the form.")
 
 
 if __name__ == "__main__":
