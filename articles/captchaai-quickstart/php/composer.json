@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captchaai-quickstart",
+    "description": "CaptchaAI Quickstart: Your First Solve in 5 Minutes — CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

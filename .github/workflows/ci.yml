@@ -1,0 +1,117 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-python:
+    name: Lint Python examples
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install linting tools
+        run: pip install ruff
+
+      - name: Check Python syntax and style
+        run: ruff check articles/*/python/ --select=E,F,W --ignore=E501
+
+  lint-node:
+    name: Lint Node.js examples
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Check JavaScript syntax
+        run: |
+          npm install -g acorn
+          find articles/*/node -name "*.js" -exec acorn --ecma2020 {} \;
+
+  lint-php:
+    name: Lint PHP examples
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.2"
+
+      - name: Check PHP syntax
+        run: find articles/*/php -name "*.php" -exec php -l {} \;
+
+  validate-structure:
+    name: Validate example pack structure
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check required files
+        run: |
+          errors=0
+          for dir in articles/*/; do
+            slug=$(basename "$dir")
+            if [ ! -f "$dir/README.md" ]; then
+              echo "ERROR: $dir is missing README.md"
+              errors=$((errors + 1))
+            fi
+            if [ ! -f "$dir/.env.example" ]; then
+              echo "ERROR: $dir is missing .env.example"
+              errors=$((errors + 1))
+            fi
+            # Check that at least one language directory exists
+            has_lang=0
+            for lang in python node php go; do
+              if [ -d "$dir/$lang" ]; then
+                has_lang=1
+              fi
+            done
+            if [ $has_lang -eq 0 ]; then
+              echo "ERROR: $dir has no language directory (python/node/php/go)"
+              errors=$((errors + 1))
+            fi
+          done
+          if [ $errors -gt 0 ]; then
+            echo "Found $errors structural errors"
+            exit 1
+          fi
+          echo "All example packs have valid structure"
+
+      - name: Check no .env files committed
+        run: |
+          if find . -name ".env" -not -path "./.git/*" | grep -q .; then
+            echo "ERROR: .env files should not be committed"
+            find . -name ".env" -not -path "./.git/*"
+            exit 1
+          fi
+          echo "No .env files found (good)"
+
+      - name: Check README links to blog
+        run: |
+          errors=0
+          for dir in articles/*/; do
+            slug=$(basename "$dir")
+            readme="$dir/README.md"
+            if [ -f "$readme" ]; then
+              if ! grep -q "blog.captchaai.com" "$readme"; then
+                echo "WARNING: $readme does not link to blog.captchaai.com"
+                errors=$((errors + 1))
+              fi
+            fi
+          done
+          if [ $errors -gt 0 ]; then
+            echo "Found $errors README files without blog links"
+            exit 1
+          fi
+          echo "All READMEs link to the blog"
