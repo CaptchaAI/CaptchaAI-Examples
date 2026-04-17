@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-debugging-captcha-api-charles-proxy",
+    "description": "Debugging CAPTCHA API Calls with Charles Proxy - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

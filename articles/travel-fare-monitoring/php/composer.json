@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-travel-fare-monitoring",
+    "description": "Travel Fare Monitoring with CAPTCHA Handling - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-chaos-engineering-captcha-solving-pipelines",
+  "version": "1.0.0",
+  "description": "Chaos Engineering for CAPTCHA Solving Pipelines - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-caching-captcha-tokens-reuse-guide",
+    "description": "Caching CAPTCHA Tokens for Reuse - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-compensating-transactions-captcha-workflows",
+    "description": "Compensating Transactions for Failed CAPTCHA Workflows - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

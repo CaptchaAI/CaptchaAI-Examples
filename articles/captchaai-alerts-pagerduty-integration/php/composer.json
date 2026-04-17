@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captchaai-alerts-pagerduty-integration",
+    "description": "Building Custom CaptchaAI Alerts with PagerDuty - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

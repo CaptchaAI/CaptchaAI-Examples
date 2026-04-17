@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-solving-captchas-japanese-korean-websites",
+    "description": "Solving CAPTCHAs on Japanese and Korean Websites - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

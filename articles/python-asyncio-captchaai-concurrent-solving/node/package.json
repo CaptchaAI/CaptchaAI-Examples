@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-python-asyncio-captchaai-concurrent-solving",
+  "version": "1.0.0",
+  "description": "Python asyncio + CaptchaAI: Concurrent Solving at Scale - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

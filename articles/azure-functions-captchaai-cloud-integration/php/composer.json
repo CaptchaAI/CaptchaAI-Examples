@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-azure-functions-captchaai-cloud-integration",
+    "description": "Azure Functions + CaptchaAI: Cloud Integration - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

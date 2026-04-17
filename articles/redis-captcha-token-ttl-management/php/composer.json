@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-redis-captcha-token-ttl-management",
+    "description": "Redis for CAPTCHA Token TTL Management and Caching - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

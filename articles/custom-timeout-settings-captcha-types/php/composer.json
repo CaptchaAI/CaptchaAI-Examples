@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-custom-timeout-settings-captcha-types",
+    "description": "Custom Timeout Settings for Different CAPTCHA Types - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

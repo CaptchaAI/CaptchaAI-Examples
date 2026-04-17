@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-sports-statistics-data-captcha-handling",
+    "description": "CAPTCHA Handling for Sports Statistics Data Collection - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

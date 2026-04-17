@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-bulkhead-pattern-captcha-solving-isolation",
+  "version": "1.0.0",
+  "description": "Bulkhead Pattern: Isolating CAPTCHA Solving Failures - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

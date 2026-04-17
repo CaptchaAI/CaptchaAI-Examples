@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-bls-captcha-instructions-code-parameter-deep-dive",
+    "description": "BLS CAPTCHA Instructions and Code Parameter Deep Dive - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

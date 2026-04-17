@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captchaai-pingback-task-notification-patterns",
+    "description": "CaptchaAI Pingback and Task Notification Patterns - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

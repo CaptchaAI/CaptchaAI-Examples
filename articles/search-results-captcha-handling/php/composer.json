@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-search-results-captcha-handling",
+    "description": "Search Results Data Collection with CAPTCHA Handling - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

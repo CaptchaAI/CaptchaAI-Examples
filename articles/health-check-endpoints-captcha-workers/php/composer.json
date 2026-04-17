@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-health-check-endpoints-captcha-workers",
+    "description": "Health Check Endpoints for CAPTCHA Solving Workers - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

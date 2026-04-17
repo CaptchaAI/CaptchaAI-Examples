@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-solve-cloudflare-challenge-nodejs",
+    "description": "How to Solve Cloudflare Challenge with Node.js - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-securing-captchaai-credentials-env-vars",
+  "version": "1.0.0",
+  "description": "Securing CaptchaAI Credentials in Environment Variables - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

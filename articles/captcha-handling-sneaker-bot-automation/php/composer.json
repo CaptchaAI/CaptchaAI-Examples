@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captcha-handling-sneaker-bot-automation",
+    "description": "CAPTCHA Handling for Sneaker Bot Automation - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-vault-integration-captchaai-api-key",
+    "description": "Vault Integration for CaptchaAI API Key Management - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

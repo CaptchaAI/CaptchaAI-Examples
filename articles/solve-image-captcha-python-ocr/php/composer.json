@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-solve-image-captcha-python-ocr",
+    "description": "Solve Image CAPTCHA with Python OCR and CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

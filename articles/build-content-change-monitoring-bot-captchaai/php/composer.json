@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-build-content-change-monitoring-bot-captchaai",
+    "description": "Build a Content Change Monitoring Bot with CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

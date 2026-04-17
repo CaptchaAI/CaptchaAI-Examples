@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-bls-captcha-instructions-code-solving",
+    "description": "BLS CAPTCHA: Understanding Instructions Codes and Solving - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

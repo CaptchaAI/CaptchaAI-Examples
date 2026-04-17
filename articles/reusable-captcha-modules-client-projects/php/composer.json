@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-reusable-captcha-modules-client-projects",
+    "description": "Reusable CAPTCHA Modules for Client Projects - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

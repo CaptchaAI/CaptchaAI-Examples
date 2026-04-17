@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-phrase-min-max-length-parameters-image-captcha",
+    "description": "Phrase, MinLen, and MaxLen Parameters for Image CAPTCHA - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

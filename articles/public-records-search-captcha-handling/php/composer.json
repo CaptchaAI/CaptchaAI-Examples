@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-public-records-search-captcha-handling",
+    "description": "CAPTCHA Handling for Public Records Search Automation - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

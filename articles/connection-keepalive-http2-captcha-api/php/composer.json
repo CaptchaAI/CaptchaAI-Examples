@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-connection-keepalive-http2-captcha-api",
+    "description": "Connection Keep-Alive and HTTP/2 for Faster CAPTCHA API Calls - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

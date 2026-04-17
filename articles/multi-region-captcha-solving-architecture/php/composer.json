@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-multi-region-captcha-solving-architecture",
+    "description": "Multi-Region CAPTCHA Solving Architecture with CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

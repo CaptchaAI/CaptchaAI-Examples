@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-iframe-captcha-extraction-nested-frames",
+  "version": "1.0.0",
+  "description": "Iframe CAPTCHA Extraction: Solving CAPTCHAs in Nested Frames - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

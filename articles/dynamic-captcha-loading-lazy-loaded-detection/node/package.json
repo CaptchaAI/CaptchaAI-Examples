@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-dynamic-captcha-loading-lazy-loaded-detection",
+  "version": "1.0.0",
+  "description": "Dynamic CAPTCHA Loading: Detecting Lazy-Loaded CAPTCHAs - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

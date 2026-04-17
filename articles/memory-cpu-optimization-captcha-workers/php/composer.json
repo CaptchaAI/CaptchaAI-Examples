@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-memory-cpu-optimization-captcha-workers",
+    "description": "Memory and CPU Optimization for CAPTCHA Solving Workers - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

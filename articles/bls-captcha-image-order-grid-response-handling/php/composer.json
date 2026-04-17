@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-bls-captcha-image-order-grid-response-handling",
+    "description": "BLS CAPTCHA Image Order and Grid Response Handling - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

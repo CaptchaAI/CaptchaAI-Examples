@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-redis-captcha-token-ttl-management",
+  "version": "1.0.0",
+  "description": "Redis for CAPTCHA Token TTL Management and Caching - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

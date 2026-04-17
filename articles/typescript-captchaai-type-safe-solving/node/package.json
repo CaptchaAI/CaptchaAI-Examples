@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-typescript-captchaai-type-safe-solving",
+  "version": "1.0.0",
+  "description": "TypeScript + CaptchaAI: Type-Safe CAPTCHA Solving - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

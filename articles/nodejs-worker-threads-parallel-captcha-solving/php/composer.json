@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-nodejs-worker-threads-parallel-captcha-solving",
+    "description": "Node.js Worker Threads for Parallel CAPTCHA Solving - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

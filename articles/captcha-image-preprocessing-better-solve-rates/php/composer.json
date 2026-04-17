@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captcha-image-preprocessing-better-solve-rates",
+    "description": "CAPTCHA Image Preprocessing for Better Solve Rates - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

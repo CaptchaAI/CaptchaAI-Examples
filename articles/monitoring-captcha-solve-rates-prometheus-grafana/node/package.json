@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-monitoring-captcha-solve-rates-prometheus-grafana",
+  "version": "1.0.0",
+  "description": "Monitoring CAPTCHA Solve Rates with Prometheus and Grafana - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

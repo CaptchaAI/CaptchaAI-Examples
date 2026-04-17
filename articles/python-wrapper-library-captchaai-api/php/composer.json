@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-python-wrapper-library-captchaai-api",
+    "description": "Building a Python Wrapper Library for CaptchaAI API - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

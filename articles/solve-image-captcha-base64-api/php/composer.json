@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-solve-image-captcha-base64-api",
+    "description": "How to Solve Image CAPTCHA with Base64 API - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

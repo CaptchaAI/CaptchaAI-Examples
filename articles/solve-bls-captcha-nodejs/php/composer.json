@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-solve-bls-captcha-nodejs",
+    "description": "Solve BLS CAPTCHA with Node.js and CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

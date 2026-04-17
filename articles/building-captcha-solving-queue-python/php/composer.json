@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-building-captcha-solving-queue-python",
+    "description": "Building a CAPTCHA Solving Queue in Python with CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

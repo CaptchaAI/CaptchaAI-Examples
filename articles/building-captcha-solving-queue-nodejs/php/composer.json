@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-building-captcha-solving-queue-nodejs",
+    "description": "Building a CAPTCHA Solving Queue in Node.js - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

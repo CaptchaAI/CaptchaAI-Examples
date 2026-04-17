@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captcha-solving-api-endpoint-testing-web-forms",
+    "description": "CAPTCHA Solving for API Endpoint Testing in Web Forms - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

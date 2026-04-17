@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-image-captcha-confidence-scores-quality",
+    "description": "Image CAPTCHA Confidence Scores: Using CaptchaAI Quality Metrics - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

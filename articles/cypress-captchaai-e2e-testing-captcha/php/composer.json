@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-cypress-captchaai-e2e-testing-captcha",
+    "description": "Cypress + CaptchaAI: E2E Testing with CAPTCHA Handling - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

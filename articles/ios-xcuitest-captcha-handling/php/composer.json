@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-ios-xcuitest-captcha-handling",
+    "description": "iOS Automation CAPTCHA Handling with XCUITest and CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

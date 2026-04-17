@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-food-delivery-price-comparison-captcha-solving",
+    "description": "Food Delivery Price Comparison with CAPTCHA Solving - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

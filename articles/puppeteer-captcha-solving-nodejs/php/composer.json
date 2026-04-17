@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-puppeteer-captcha-solving-nodejs",
+    "description": "Puppeteer CAPTCHA Solving with Node.js and CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

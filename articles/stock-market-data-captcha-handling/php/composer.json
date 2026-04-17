@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-stock-market-data-captcha-handling",
+    "description": "CAPTCHA Handling for Stock Market Data Collection - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

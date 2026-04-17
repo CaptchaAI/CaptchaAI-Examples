@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-domain-whois-lookup-captcha-handling",
+    "description": "CAPTCHA Handling for Domain WHOIS Lookup Automation - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

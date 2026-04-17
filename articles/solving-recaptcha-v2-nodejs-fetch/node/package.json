@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-solving-recaptcha-v2-nodejs-fetch",
+  "version": "1.0.0",
+  "description": "Solving reCAPTCHA v2 with Node.js Fetch API and CaptchaAI - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-headless-browser-captcha-issues",
+    "description": "Headless Browser CAPTCHA Issues and Solutions - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

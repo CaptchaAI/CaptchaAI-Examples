@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-opentelemetry-tracing-captcha-pipelines",
+    "description": "OpenTelemetry Tracing for CAPTCHA Solving Pipelines - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

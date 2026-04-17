@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-math-captcha-solving-captchaai-calc-parameter",
+    "description": "Math CAPTCHA Solving with CaptchaAI calc Parameter - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

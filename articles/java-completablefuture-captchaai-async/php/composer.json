@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-java-completablefuture-captchaai-async",
+    "description": "Java CompletableFuture + CaptchaAI: Async CAPTCHA Pipeline - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

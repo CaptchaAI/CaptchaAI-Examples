@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-kubernetes-job-queues-captcha-solving-scale",
+    "description": "Kubernetes Job Queues for CAPTCHA Solving at Scale - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-chaos-engineering-captcha-solving-pipelines",
+    "description": "Chaos Engineering for CAPTCHA Solving Pipelines - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

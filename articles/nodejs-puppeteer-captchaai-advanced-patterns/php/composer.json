@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-nodejs-puppeteer-captchaai-advanced-patterns",
+    "description": "Node.js Puppeteer + CaptchaAI Advanced Patterns - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

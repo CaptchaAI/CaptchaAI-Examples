@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-typescript-captchaai-type-safe-solving",
+    "description": "TypeScript + CaptchaAI: Type-Safe CAPTCHA Solving - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

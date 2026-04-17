@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-auction-site-monitoring-captcha-handling",
+    "description": "CAPTCHA Handling for Auction Site Monitoring - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

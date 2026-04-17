@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captchaai-debug-logger-development",
+    "description": "Building a CaptchaAI Debug Logger for Development - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-dead-letter-queue-failed-captcha-tasks",
+  "version": "1.0.0",
+  "description": "Dead-Letter Queue for Failed CAPTCHA Tasks - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

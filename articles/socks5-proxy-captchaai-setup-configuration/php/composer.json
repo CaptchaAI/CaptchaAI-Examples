@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-socks5-proxy-captchaai-setup-configuration",
+    "description": "SOCKS5 Proxy + CaptchaAI: Setup and Configuration Guide - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

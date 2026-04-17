@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-cloudflare-challenge-page-parameters-token-flow",
+  "version": "1.0.0",
+  "description": "Cloudflare Challenge Page Parameters and Token Flow - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-shadow-dom-captcha-handling-web-components",
+    "description": "Shadow DOM CAPTCHA Handling: Reaching Elements in Web Components - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

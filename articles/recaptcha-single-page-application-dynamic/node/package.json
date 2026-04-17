@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-recaptcha-single-page-application-dynamic",
+  "version": "1.0.0",
+  "description": "reCAPTCHA in Single Page Applications: Dynamic Loading Patterns - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

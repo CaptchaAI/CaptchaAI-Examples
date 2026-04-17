@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-webhook-endpoint-monitoring-captcha-callbacks",
+    "description": "Webhook Endpoint Monitoring for CAPTCHA Solve Callbacks - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

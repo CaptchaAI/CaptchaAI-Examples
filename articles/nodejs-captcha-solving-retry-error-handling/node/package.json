@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-nodejs-captcha-solving-retry-error-handling",
+  "version": "1.0.0",
+  "description": "Node.js CAPTCHA Solving with Retry and Error Handling - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-proxy-rotation-captcha-scraping",
+    "description": "Proxy Rotation for CAPTCHA Scraping - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

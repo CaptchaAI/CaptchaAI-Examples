@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-dead-letter-queue-failed-captcha-tasks",
+    "description": "Dead-Letter Queue for Failed CAPTCHA Tasks - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

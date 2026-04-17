@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-improving-ocr-captcha-accuracy-captchaai-settings",
+    "description": "Improving OCR CAPTCHA Accuracy with CaptchaAI Settings - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

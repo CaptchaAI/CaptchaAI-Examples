@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-solve-geetest-v3-php",
+    "description": "How to Solve GeeTest v3 CAPTCHA with PHP - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

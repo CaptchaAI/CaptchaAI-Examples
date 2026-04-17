@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-building-php-composer-package-captchaai",
+    "description": "Building a PHP Composer Package for CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

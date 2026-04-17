@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-undetected-chromedriver-captchaai",
+    "description": "Undetected ChromeDriver with CaptchaAI Integration - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

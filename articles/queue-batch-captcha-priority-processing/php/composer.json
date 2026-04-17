@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-queue-batch-captcha-priority-processing",
+    "description": "Queue-Based Batch CAPTCHA Processing with Priority Levels - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

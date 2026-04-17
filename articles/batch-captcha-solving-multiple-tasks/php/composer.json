@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-batch-captcha-solving-multiple-tasks",
+    "description": "Batch CAPTCHA Solving: Submitting Multiple Tasks Efficiently - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

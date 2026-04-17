@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-proxy-authentication-methods-captchaai",
+    "description": "Proxy Authentication Methods for CaptchaAI API - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

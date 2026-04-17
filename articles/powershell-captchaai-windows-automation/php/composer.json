@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-powershell-captchaai-windows-automation",
+    "description": "PowerShell + CaptchaAI: Windows Automation CAPTCHA Solving - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

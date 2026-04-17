@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-batch-captcha-cost-estimation-budget-alerts",
+    "description": "Batch CAPTCHA Solving Cost Estimation and Budget Alerts - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-compensating-transactions-captcha-workflows",
+  "version": "1.0.0",
+  "description": "Compensating Transactions for Failed CAPTCHA Workflows - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

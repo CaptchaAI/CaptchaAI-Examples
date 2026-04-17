@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-batch-image-captcha-solving-1000-images",
+  "version": "1.0.0",
+  "description": "Batch Image CAPTCHA Solving: Processing 1000+ Images - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

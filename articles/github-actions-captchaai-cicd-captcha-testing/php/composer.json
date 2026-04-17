@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-github-actions-captchaai-cicd-captcha-testing",
+    "description": "GitHub Actions + CaptchaAI: CI/CD CAPTCHA Testing - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

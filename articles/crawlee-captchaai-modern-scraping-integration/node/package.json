@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-crawlee-captchaai-modern-scraping-integration",
+  "version": "1.0.0",
+  "description": "Crawlee + CaptchaAI: Modern Scraping Framework Integration - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

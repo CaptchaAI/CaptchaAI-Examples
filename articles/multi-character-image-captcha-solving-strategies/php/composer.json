@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-multi-character-image-captcha-solving-strategies",
+    "description": "Multi-Character Image CAPTCHA Solving Strategies - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-high-availability-captcha-solving-failover",
+  "version": "1.0.0",
+  "description": "High Availability CAPTCHA Solving: Failover and Redundancy - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-auto-scaling-captcha-solving-workers",
+    "description": "Auto-Scaling CAPTCHA Solving Workers - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

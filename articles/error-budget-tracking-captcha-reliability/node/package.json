@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-error-budget-tracking-captcha-reliability",
+  "version": "1.0.0",
+  "description": "Error Budget Tracking for CAPTCHA Solve Reliability - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

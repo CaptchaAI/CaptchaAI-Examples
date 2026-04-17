@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-kafka-captchaai-streaming-captcha-processing",
+    "description": "Apache Kafka + CaptchaAI: Streaming CAPTCHA Task Processing - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

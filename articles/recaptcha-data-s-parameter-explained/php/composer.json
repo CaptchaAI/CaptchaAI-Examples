@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-recaptcha-data-s-parameter-explained",
+    "description": "reCAPTCHA Data-S Parameter Explained - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

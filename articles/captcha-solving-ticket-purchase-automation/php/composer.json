@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captcha-solving-ticket-purchase-automation",
+    "description": "CAPTCHA Solving in Ticket Purchase Automation - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

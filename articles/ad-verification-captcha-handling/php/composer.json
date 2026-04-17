@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-ad-verification-captcha-handling",
+    "description": "Ad Verification Workflows with CAPTCHA Handling - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

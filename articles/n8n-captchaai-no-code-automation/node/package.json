@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-n8n-captchaai-no-code-automation",
+  "version": "1.0.0",
+  "description": "n8n + CaptchaAI: No-Code CAPTCHA Solving Workflow - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

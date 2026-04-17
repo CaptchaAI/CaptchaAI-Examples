@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-docker-captchaai-containerized-captcha-solving",
+    "description": "Docker + CaptchaAI: Containerized CAPTCHA Solving - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

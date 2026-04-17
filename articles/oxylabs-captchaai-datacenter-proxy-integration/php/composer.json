@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-oxylabs-captchaai-datacenter-proxy-integration",
+    "description": "Oxylabs + CaptchaAI: Datacenter Proxy Integration - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

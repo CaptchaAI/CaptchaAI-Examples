@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-handle-captcha-in-web-scraping-workflows",
+    "description": "How to Handle CAPTCHA Challenges in Web Scraping Workflows - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

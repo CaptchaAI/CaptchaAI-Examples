@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-http-replay-captcha-api-debugging",
+    "description": "HTTP Replay for CAPTCHA API Debugging: Save and Reproduce Errors - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

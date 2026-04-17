@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-building-go-client-captchaai-api",
+    "description": "Building a Go Client Library for CaptchaAI API - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

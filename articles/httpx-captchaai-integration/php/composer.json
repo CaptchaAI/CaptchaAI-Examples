@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-httpx-captchaai-integration",
+    "description": "HTTPX + CaptchaAI Integration - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

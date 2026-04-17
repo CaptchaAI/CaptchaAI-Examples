@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-selenium-captcha-handling-python",
+    "description": "Selenium CAPTCHA Handling with Python and CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

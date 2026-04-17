@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-connection-pool-sizing-captcha-api-clients",
+    "description": "Connection Pool Sizing for CAPTCHA API HTTP Clients - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

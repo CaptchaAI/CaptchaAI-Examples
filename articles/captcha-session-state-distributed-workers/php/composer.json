@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captcha-session-state-distributed-workers",
+    "description": "CAPTCHA Session State Management Across Distributed Workers - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

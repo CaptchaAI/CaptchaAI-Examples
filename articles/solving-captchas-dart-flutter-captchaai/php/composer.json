@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-solving-captchas-dart-flutter-captchaai",
+    "description": "Solving CAPTCHAs with Dart for Flutter Applications - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

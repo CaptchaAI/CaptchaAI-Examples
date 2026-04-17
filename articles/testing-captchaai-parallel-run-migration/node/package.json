@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-testing-captchaai-parallel-run-migration",
+  "version": "1.0.0",
+  "description": "Testing CaptchaAI Before Full Migration: Parallel Run Guide - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

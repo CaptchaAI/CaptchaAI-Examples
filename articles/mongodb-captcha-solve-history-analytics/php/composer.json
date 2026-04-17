@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-mongodb-captcha-solve-history-analytics",
+    "description": "MongoDB for CAPTCHA Solve History and Analytics - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

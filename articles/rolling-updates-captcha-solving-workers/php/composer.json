@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-rolling-updates-captcha-solving-workers",
+    "description": "Rolling Updates for CAPTCHA Solving Worker Fleets - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

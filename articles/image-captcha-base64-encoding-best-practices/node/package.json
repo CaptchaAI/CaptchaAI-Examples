@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-image-captcha-base64-encoding-best-practices",
+  "version": "1.0.0",
+  "description": "Image CAPTCHA Base64 Encoding Best Practices - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

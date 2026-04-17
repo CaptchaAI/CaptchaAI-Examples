@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-scraping-reliability-captcha-handling",
+  "version": "1.0.0",
+  "description": "Scraping Reliability Guide: Managing Blocks and CAPTCHA Challenges - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

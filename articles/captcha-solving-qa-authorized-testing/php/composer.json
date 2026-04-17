@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captcha-solving-qa-authorized-testing",
+    "description": "CAPTCHA Solving for QA and Authorized Testing - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

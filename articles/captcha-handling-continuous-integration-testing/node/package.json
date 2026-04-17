@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-captcha-handling-continuous-integration-testing",
+  "version": "1.0.0",
+  "description": "CAPTCHA Handling in Continuous Integration Testing - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-build-competitor-analysis-dashboard-captchaai",
+    "description": "Build a Competitor Analysis Dashboard with CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

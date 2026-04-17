@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-government-portal-automation-captcha-solving",
+  "version": "1.0.0",
+  "description": "Government Portal Automation with CAPTCHA Solving - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

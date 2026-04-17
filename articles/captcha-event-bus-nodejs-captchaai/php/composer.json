@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captcha-event-bus-nodejs-captchaai",
+    "description": "Building a CAPTCHA Solve Event Bus with Node.js and CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

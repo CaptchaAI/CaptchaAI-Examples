@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-solving-captchas-dart-flutter-captchaai",
+  "version": "1.0.0",
+  "description": "Solving CAPTCHAs with Dart for Flutter Applications - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

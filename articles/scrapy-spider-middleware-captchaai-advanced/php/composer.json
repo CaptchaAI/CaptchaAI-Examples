@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-scrapy-spider-middleware-captchaai-advanced",
+    "description": "Scrapy Spider Middleware for CaptchaAI: Advanced Patterns - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-queue-batch-captcha-priority-processing",
+  "version": "1.0.0",
+  "description": "Queue-Based Batch CAPTCHA Processing with Priority Levels - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

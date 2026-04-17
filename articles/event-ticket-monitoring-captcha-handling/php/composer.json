@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-event-ticket-monitoring-captcha-handling",
+    "description": "Event Ticket Monitoring with CAPTCHA Handling - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

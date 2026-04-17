@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-build-price-comparison-bot-python-captchaai",
+    "description": "Build a Price Comparison Bot with Python and CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captchaai-api-key-rotation",
+    "description": "CaptchaAI API Key Rotation: Multi-Key Management - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-monitoring-captcha-solve-rates-prometheus-grafana",
+    "description": "Monitoring CAPTCHA Solve Rates with Prometheus and Grafana - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

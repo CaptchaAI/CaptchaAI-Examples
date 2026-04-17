@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-healthcare-data-collection-captcha-handling",
+  "version": "1.0.0",
+  "description": "Healthcare Data Collection Behind CAPTCHA Walls - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

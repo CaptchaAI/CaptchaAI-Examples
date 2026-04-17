@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-captchaai-scraping-stack-100-budget",
+  "version": "1.0.0",
+  "description": ""Build a Full Scraping Stack Under $100/Month Using CaptchaAI" - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

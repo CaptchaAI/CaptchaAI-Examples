@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-selenium-wire-captchaai-request-interception",
+    "description": "Selenium Wire + CaptchaAI: Request Interception for CAPTCHA Solving - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

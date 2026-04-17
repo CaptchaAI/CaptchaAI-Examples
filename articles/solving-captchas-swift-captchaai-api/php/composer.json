@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-solving-captchas-swift-captchaai-api",
+    "description": "Solving CAPTCHAs with Swift and CaptchaAI API - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

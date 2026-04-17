@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-grafana-dashboard-templates-captchaai",
+    "description": "Grafana Dashboard Templates for CaptchaAI Metrics - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

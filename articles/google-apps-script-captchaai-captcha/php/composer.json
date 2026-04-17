@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-google-apps-script-captchaai-captcha",
+    "description": "Google Apps Script + CaptchaAI: Spreadsheet CAPTCHA Automation - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

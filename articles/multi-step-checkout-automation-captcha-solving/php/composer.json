@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-multi-step-checkout-automation-captcha-solving",
+    "description": "Multi-Step Checkout Automation with CAPTCHA Solving - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

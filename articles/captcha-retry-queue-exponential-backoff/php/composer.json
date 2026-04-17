@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captcha-retry-queue-exponential-backoff",
+    "description": "CAPTCHA Retry Queue with Exponential Backoff - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

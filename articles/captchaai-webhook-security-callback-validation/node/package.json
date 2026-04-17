@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-captchaai-webhook-security-callback-validation",
+  "version": "1.0.0",
+  "description": "CaptchaAI Webhook Security: Validating Callback Signatures - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

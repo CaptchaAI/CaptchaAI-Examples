@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-solve-recaptcha-invisible-nodejs",
+    "description": "Solve reCAPTCHA Invisible with Node.js and CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

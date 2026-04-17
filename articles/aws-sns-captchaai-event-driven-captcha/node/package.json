@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-aws-sns-captchaai-event-driven-captcha",
+  "version": "1.0.0",
+  "description": "Building Event-Driven CAPTCHA Solving with AWS SNS and CaptchaAI - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-slack-bot-captcha-notifications",
+    "description": "Slack Bot Notifications for CAPTCHA Events - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

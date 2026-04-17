@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-idempotent-captcha-solving-prevent-duplicates",
+    "description": "Idempotent CAPTCHA Solving: Preventing Duplicate Solves - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

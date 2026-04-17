@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-build-price-comparison-bot-python-captchaai",
+  "version": "1.0.0",
+  "description": "Build a Price Comparison Bot with Python and CaptchaAI - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

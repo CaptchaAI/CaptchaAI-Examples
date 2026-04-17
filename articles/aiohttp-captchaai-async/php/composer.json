@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-aiohttp-captchaai-async",
+    "description": "aiohttp + CaptchaAI: Async CAPTCHA Solving - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

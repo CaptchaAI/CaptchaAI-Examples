@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-solving-cloudflare-turnstile-nodejs",
+  "version": "1.0.0",
+  "description": "Solving Cloudflare Turnstile with Node.js and CaptchaAI - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

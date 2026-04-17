@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captchaai-monitoring-datadog-metrics-alerts",
+    "description": "CaptchaAI Monitoring with Datadog: Metrics and Alerts - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

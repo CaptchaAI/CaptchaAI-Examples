@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-python-multiprocessing-parallel-captcha-solving",
+    "description": "Python Multiprocessing for Parallel CAPTCHA Solving - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

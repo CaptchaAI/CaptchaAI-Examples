@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-terraform-captchaai-infrastructure-as-code",
+    "description": "Terraform + CaptchaAI: Infrastructure as Code for CAPTCHA Workers - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

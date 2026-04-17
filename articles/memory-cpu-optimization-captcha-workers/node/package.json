@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-memory-cpu-optimization-captcha-workers",
+  "version": "1.0.0",
+  "description": "Memory and CPU Optimization for CAPTCHA Solving Workers - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

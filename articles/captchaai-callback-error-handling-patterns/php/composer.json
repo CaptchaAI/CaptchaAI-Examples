@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captchaai-callback-error-handling-patterns",
+    "description": "CaptchaAI Callback URL Error Handling: Retry and Dead-Letter Patterns - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

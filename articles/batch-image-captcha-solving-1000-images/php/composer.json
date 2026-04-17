@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-batch-image-captcha-solving-1000-images",
+    "description": "Batch Image CAPTCHA Solving: Processing 1000+ Images - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

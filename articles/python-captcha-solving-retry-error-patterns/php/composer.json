@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-python-captcha-solving-retry-error-patterns",
+    "description": "Python CAPTCHA Solving with Retry and Error Handling Patterns - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

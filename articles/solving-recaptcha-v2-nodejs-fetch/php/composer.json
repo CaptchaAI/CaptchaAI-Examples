@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-solving-recaptcha-v2-nodejs-fetch",
+    "description": "Solving reCAPTCHA v2 with Node.js Fetch API and CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

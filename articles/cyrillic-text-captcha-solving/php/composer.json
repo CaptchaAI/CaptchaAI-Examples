@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-cyrillic-text-captcha-solving",
+    "description": "Cyrillic Text CAPTCHA Solving with CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

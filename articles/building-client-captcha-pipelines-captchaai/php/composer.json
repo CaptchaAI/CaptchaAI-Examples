@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-building-client-captcha-pipelines-captchaai",
+    "description": "Building Client CAPTCHA Pipelines with CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

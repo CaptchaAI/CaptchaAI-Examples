@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-recaptcha-v3-action-parameter-explained",
+    "description": "reCAPTCHA v3 Action Parameter Explained - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

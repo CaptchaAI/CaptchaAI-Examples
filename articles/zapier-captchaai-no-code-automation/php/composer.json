@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-zapier-captchaai-no-code-automation",
+    "description": "Zapier + CaptchaAI: No-Code CAPTCHA Solving Automation - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

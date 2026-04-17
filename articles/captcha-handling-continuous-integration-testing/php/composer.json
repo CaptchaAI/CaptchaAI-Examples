@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captcha-handling-continuous-integration-testing",
+    "description": "CAPTCHA Handling in Continuous Integration Testing - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

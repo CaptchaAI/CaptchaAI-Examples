@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-sse-realtime-captcha-solve-notifications",
+    "description": "Server-Sent Events for Real-Time CAPTCHA Solve Notifications - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

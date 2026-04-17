@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-automated-form-submission-captcha-handling",
+    "description": "Automated Form Submission with CAPTCHA Handling - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

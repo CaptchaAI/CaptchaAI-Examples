@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-nodejs-playwright-captchaai-complete-integration",
+    "description": "Node.js Playwright + CaptchaAI Complete Integration - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

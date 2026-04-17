@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captcha-solving-csharp",
+    "description": "Solve CAPTCHAs with C# Using CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-react-native-webview-captcha-solving",
+    "description": "Solving CAPTCHAs in React Native WebViews with CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

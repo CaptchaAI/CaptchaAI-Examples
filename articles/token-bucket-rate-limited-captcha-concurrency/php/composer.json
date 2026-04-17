@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-token-bucket-rate-limited-captcha-concurrency",
+    "description": "Rate-Limited Concurrency: Token Bucket for CAPTCHA API Calls - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

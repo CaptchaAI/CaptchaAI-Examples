@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-healthcare-data-collection-captcha-handling",
+    "description": "Healthcare Data Collection Behind CAPTCHA Walls - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

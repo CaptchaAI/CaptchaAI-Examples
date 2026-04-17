@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-cloudflare-challenge-page-parameters-token-flow",
+    "description": "Cloudflare Challenge Page Parameters and Token Flow - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

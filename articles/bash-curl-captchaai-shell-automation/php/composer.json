@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-bash-curl-captchaai-shell-automation",
+    "description": "Bash Script + cURL + CaptchaAI: Shell CAPTCHA Automation - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

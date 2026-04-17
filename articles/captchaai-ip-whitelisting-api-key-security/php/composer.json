@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captchaai-ip-whitelisting-api-key-security",
+    "description": "CaptchaAI IP Whitelisting and API Key Security - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

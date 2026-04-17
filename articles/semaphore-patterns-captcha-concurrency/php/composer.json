@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-semaphore-patterns-captcha-concurrency",
+    "description": "Semaphore Patterns for CAPTCHA Concurrency Control - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-load-testing-captcha-solving-pipeline",
+    "description": "Load Testing Your CAPTCHA Solving Pipeline with CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

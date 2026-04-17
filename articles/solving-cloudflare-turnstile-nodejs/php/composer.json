@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-solving-cloudflare-turnstile-nodejs",
+    "description": "Solving Cloudflare Turnstile with Node.js and CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

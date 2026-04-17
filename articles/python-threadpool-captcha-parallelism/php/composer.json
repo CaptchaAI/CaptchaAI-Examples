@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-python-threadpool-captcha-parallelism",
+    "description": "Python ThreadPoolExecutor for CAPTCHA Solving Parallelism - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

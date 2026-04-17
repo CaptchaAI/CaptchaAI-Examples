@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-cloudflare-turnstile-sitekey-extraction",
+    "description": "Cloudflare Turnstile Sitekey Extraction and Solving - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

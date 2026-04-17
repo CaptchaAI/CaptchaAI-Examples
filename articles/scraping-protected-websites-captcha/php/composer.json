@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-scraping-protected-websites-captcha",
+    "description": "Scraping CAPTCHA-Protected Websites - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

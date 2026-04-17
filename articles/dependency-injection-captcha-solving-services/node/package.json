@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-dependency-injection-captcha-solving-services",
+  "version": "1.0.0",
+  "description": "Dependency Injection for CAPTCHA Solving Services - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

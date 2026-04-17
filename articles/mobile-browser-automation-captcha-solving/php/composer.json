@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-mobile-browser-automation-captcha-solving",
+    "description": "Mobile Browser Automation CAPTCHA Solving with CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

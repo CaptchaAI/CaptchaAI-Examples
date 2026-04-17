@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-scrapy-captchaai-integration",
+    "description": "Scrapy + CaptchaAI Integration Guide - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

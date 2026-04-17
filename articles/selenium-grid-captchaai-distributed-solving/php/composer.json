@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-selenium-grid-captchaai-distributed-solving",
+    "description": "Selenium Grid + CaptchaAI: Distributed CAPTCHA Solving - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

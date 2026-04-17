@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-captchaai-soft-id-referral-tracking",
+  "version": "1.0.0",
+  "description": "CaptchaAI Soft ID and Referral Tracking Integration - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-graceful-degradation-captcha-solving-fails",
+    "description": "Graceful Degradation When CAPTCHA Solving Fails - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

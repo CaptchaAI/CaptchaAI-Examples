@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-solve-multiple-captcha-types-workflow",
+    "description": "How to Solve Multiple CAPTCHA Types in One Workflow - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

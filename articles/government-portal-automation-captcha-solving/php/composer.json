@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-government-portal-automation-captcha-solving",
+    "description": "Government Portal Automation with CAPTCHA Solving - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

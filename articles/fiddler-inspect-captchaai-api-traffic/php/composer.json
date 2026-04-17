@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-fiddler-inspect-captchaai-api-traffic",
+    "description": "Using Fiddler to Inspect CaptchaAI API Traffic - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

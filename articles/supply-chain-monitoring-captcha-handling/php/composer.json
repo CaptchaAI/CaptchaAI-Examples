@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-supply-chain-monitoring-captcha-handling",
+    "description": "Supply Chain Monitoring with CAPTCHA Handling - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

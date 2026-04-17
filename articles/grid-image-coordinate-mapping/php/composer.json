@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-grid-image-coordinate-mapping",
+    "description": "Grid Image CAPTCHA: Coordinate Mapping and Cell Selection - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

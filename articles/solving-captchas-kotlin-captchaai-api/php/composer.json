@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-solving-captchas-kotlin-captchaai-api",
+    "description": "Solving CAPTCHAs with Kotlin and CaptchaAI API - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

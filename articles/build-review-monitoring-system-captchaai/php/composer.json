@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-build-review-monitoring-system-captchaai",
+    "description": "Build a Review Monitoring System with CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-kubernetes-job-queues-captcha-solving-scale",
+  "version": "1.0.0",
+  "description": "Kubernetes Job Queues for CAPTCHA Solving at Scale - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

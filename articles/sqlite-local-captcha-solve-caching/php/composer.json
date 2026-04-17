@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-sqlite-local-captcha-solve-caching",
+    "description": "SQLite for Local CAPTCHA Solve Caching and Tracking - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

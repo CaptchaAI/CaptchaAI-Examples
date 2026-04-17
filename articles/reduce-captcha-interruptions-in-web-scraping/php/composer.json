@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-reduce-captcha-interruptions-in-web-scraping",
+    "description": "Reducing CAPTCHA Interruptions in Web Scraping - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

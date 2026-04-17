@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-building-captchaai-usage-dashboard-monitoring",
+    "description": "Building a CaptchaAI Usage Dashboard and Monitoring - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-extracting-recaptcha-parameters-page-source",
+    "description": "Extracting reCAPTCHA Parameters from Page Source - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-rolling-updates-captcha-solving-workers",
+  "version": "1.0.0",
+  "description": "Rolling Updates for CAPTCHA Solving Worker Fleets - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

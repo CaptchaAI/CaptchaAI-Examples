@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captcha-solving-10000-tasks-per-hour",
+    "description": "CAPTCHA Solving Throughput: How to Process 10,000 Tasks per Hour - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

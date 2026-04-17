@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-python-playwright-captchaai-complete-guide",
+    "description": "Python Playwright + CaptchaAI Complete Integration Guide - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-solve-image-captcha-nodejs",
+    "description": "Solve Image CAPTCHA with Node.js and CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

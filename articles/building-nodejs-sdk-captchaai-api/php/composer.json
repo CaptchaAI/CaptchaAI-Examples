@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-building-nodejs-sdk-captchaai-api",
+    "description": "Building a Node.js SDK for CaptchaAI API - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

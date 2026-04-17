@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-case-sensitive-captcha-api-parameter-guide",
+    "description": "Case-Sensitive CAPTCHA API Parameter Guide - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

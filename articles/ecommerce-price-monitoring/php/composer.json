@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-ecommerce-price-monitoring",
+    "description": "E-Commerce Price Monitoring with CAPTCHA Handling - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

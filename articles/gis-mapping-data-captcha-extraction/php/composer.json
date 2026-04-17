@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-gis-mapping-data-captcha-extraction",
+    "description": "CAPTCHA Handling for GIS and Mapping Data Extraction - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-pytest-captchaai-test-fixtures",
+    "description": "Pytest Fixtures for CaptchaAI API Testing - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

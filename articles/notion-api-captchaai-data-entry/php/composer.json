@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-notion-api-captchaai-data-entry",
+    "description": "Notion API + CaptchaAI: Automated Data Entry with CAPTCHA Handling - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

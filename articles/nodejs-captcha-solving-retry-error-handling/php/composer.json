@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-nodejs-captcha-solving-retry-error-handling",
+    "description": "Node.js CAPTCHA Solving with Retry and Error Handling - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

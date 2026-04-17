@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-python-asyncio-captchaai-concurrent-solving",
+    "description": "Python asyncio + CaptchaAI: Concurrent Solving at Scale - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

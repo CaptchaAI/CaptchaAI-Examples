@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-nodejs-promise-allsettled-batch-captcha",
+    "description": "Node.js Promise.allSettled for Batch CAPTCHA Solving - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

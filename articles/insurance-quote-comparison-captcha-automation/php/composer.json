@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-insurance-quote-comparison-captcha-automation",
+    "description": "Insurance Quote Comparison Automation with CAPTCHA Handling - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

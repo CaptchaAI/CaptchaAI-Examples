@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-go-goroutines-captchaai-high-throughput",
+    "description": "Go Goroutines + CaptchaAI: High-Throughput CAPTCHA Solving - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

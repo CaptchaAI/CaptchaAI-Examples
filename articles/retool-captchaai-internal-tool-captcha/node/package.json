@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-retool-captchaai-internal-tool-captcha",
+  "version": "1.0.0",
+  "description": "Retool + CaptchaAI: Internal Tool CAPTCHA Form Handling - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

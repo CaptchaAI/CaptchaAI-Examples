@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-power-automate-captchaai-captcha-solving",
+  "version": "1.0.0",
+  "description": "Power Automate + CaptchaAI: Microsoft Flow CAPTCHA Solving - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

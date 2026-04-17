@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-expressjs-captchaai-server-side-captcha",
+    "description": "Express.js + CaptchaAI: Server-Side CAPTCHA Handling - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-implementing-retry-logic-captchaai-api",
+    "description": "Implementing Robust Retry Logic with CaptchaAI API - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

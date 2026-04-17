@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-arabic-rtl-captcha-handling",
+    "description": "Arabic and RTL CAPTCHA Handling with CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

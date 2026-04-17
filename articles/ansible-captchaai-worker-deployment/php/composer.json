@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-ansible-captchaai-worker-deployment",
+    "description": "Ansible Playbooks for CaptchaAI Worker Deployment - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

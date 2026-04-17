@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-flutter-webview-captcha-handling",
+    "description": "CAPTCHA Handling in Flutter WebViews with CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

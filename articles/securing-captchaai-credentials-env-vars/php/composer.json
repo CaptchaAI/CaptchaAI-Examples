@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-securing-captchaai-credentials-env-vars",
+    "description": "Securing CaptchaAI Credentials in Environment Variables - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-smartproxy-captchaai-residential-proxy-setup",
+    "description": "Smartproxy + CaptchaAI: Residential Proxy Setup for CAPTCHA Solving - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

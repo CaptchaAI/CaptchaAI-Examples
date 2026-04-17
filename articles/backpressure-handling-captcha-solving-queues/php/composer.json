@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-backpressure-handling-captcha-solving-queues",
+    "description": "Backpressure Handling in CAPTCHA Solving Queues - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

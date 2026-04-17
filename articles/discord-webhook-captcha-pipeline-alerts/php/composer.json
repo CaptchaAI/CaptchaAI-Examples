@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-discord-webhook-captcha-pipeline-alerts",
+    "description": "Discord Webhook Alerts for CAPTCHA Pipeline Status - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

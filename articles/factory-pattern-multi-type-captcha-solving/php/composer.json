@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-factory-pattern-multi-type-captcha-solving",
+    "description": "Factory Pattern for Multi-Type CAPTCHA Solving with CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

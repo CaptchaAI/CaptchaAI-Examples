@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captchaai-scraping-stack-100-budget",
+    "description": ""Build a Full Scraping Stack Under $100/Month Using CaptchaAI" - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

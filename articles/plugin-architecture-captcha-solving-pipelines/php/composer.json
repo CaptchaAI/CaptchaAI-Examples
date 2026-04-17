@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-plugin-architecture-captcha-solving-pipelines",
+    "description": "Plugin Architecture for CAPTCHA Solving Pipelines - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

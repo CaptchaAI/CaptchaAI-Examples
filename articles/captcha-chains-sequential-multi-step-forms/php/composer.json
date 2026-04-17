@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captcha-chains-sequential-multi-step-forms",
+    "description": "CAPTCHA Chains: Solving Sequential Challenges in Multi-Step Forms - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

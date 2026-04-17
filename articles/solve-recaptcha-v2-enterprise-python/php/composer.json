@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-solve-recaptcha-v2-enterprise-python",
+    "description": "How to Solve reCAPTCHA v2 Enterprise with Python - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

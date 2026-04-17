@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-nats-messaging-captchaai-task-distribution",
+    "description": "NATS Messaging + CaptchaAI: Lightweight CAPTCHA Task Distribution - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

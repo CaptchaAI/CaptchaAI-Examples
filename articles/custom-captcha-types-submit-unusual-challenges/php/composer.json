@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-custom-captcha-types-submit-unusual-challenges",
+    "description": "Custom CAPTCHA Types: Submitting Unusual Challenges to CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

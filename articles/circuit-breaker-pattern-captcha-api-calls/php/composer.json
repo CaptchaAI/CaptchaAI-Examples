@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-circuit-breaker-pattern-captcha-api-calls",
+    "description": "Circuit Breaker Pattern for CAPTCHA API Calls - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

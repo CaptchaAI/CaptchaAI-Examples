@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-captcha-solving-10000-tasks-per-hour",
+  "version": "1.0.0",
+  "description": "CAPTCHA Solving Throughput: How to Process 10,000 Tasks per Hour - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

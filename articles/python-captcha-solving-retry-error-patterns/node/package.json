@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-python-captcha-solving-retry-error-patterns",
+  "version": "1.0.0",
+  "description": "Python CAPTCHA Solving with Retry and Error Handling Patterns - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

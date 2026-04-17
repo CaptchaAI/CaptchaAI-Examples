@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-n8n-captchaai-no-code-automation",
+    "description": "n8n + CaptchaAI: No-Code CAPTCHA Solving Workflow - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

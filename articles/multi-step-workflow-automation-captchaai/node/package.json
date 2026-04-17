@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-multi-step-workflow-automation-captchaai",
+  "version": "1.0.0",
+  "description": "Multi-Step Workflow Automation with CaptchaAI - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

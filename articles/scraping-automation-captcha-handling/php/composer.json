@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-scraping-automation-captcha-handling",
+    "description": "Scraping Automation and CAPTCHA Handling - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

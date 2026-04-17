@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-geetest-v3-slider-parameter-extraction",
+    "description": "GeeTest v3 Slider Parameter Extraction and Solving - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captcha-detection-scraping-explained",
+    "description": "How CAPTCHA Detection Works in Web Scraping - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

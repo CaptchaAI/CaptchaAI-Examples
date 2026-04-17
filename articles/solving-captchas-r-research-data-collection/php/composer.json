@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-solving-captchas-r-research-data-collection",
+    "description": "Solving CAPTCHAs with R for Research Data Collection - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

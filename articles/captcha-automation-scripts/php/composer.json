@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captcha-automation-scripts",
+    "description": "CAPTCHA Automation Scripts with CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

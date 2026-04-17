@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captchaai-balance-check-auto-refill",
+    "description": "CaptchaAI Balance Check and Auto-Refill Integration - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-expressjs-captchaai-server-side-captcha",
+  "version": "1.0.0",
+  "description": "Express.js + CaptchaAI: Server-Side CAPTCHA Handling - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

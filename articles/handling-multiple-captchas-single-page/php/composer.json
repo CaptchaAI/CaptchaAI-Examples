@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-handling-multiple-captchas-single-page",
+    "description": "Handling Multiple CAPTCHAs on a Single Page - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

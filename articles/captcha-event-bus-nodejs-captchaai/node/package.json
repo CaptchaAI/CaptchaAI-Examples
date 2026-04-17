@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-captcha-event-bus-nodejs-captchaai",
+  "version": "1.0.0",
+  "description": "Building a CAPTCHA Solve Event Bus with Node.js and CaptchaAI - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-iframe-captcha-extraction-nested-frames",
+    "description": "Iframe CAPTCHA Extraction: Solving CAPTCHAs in Nested Frames - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

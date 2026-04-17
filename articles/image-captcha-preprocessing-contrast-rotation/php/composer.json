@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-image-captcha-preprocessing-contrast-rotation",
+    "description": "Image CAPTCHA Preprocessing: Contrast, Rotation, and Noise Removal - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

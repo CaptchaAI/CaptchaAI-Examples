@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captchaai-api-latency-optimization",
+    "description": "CaptchaAI API Latency Optimization: Faster Solves - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

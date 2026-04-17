@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-streaming-batch-captcha-results-processing",
+    "description": "Streaming Batch Results: Processing CAPTCHA Solutions as They Arrive - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

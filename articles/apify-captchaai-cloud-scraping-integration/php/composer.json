@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-apify-captchaai-cloud-scraping-integration",
+    "description": "Apify + CaptchaAI: Cloud Scraping Platform Integration - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-high-availability-captcha-solving-failover",
+    "description": "High Availability CAPTCHA Solving: Failover and Redundancy - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

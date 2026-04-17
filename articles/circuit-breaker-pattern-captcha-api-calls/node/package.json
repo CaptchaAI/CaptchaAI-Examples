@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-circuit-breaker-pattern-captcha-api-calls",
+  "version": "1.0.0",
+  "description": "Circuit Breaker Pattern for CAPTCHA API Calls - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captchaai-callback-url-webhook-guide",
+    "description": "CaptchaAI Callback URL Setup: Complete Webhook Guide - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

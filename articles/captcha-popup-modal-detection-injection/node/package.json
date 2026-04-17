@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-captcha-popup-modal-detection-injection",
+  "version": "1.0.0",
+  "description": "CAPTCHA in Pop-Up Modals: Detection and Token Injection - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captchaai-soft-id-referral-tracking",
+    "description": "CaptchaAI Soft ID and Referral Tracking Integration - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

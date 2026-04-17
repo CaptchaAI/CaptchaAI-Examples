@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-solving-captchas-scala-captchaai-api",
+    "description": "Solving CAPTCHAs with Scala and CaptchaAI API - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

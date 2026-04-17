@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-colly-captchaai-go-scraping-captcha-solving",
+    "description": "Colly + CaptchaAI: Go-Based Scraping with CAPTCHA Solving - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

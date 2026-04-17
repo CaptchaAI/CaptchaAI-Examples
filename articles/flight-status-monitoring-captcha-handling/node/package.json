@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-flight-status-monitoring-captcha-handling",
+  "version": "1.0.0",
+  "description": "CAPTCHA Handling for Flight Status Monitoring - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captcha-solving-fallback-chains",
+    "description": "CAPTCHA Solving Fallback Chains - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

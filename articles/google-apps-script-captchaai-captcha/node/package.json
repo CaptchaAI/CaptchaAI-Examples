@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-google-apps-script-captchaai-captcha",
+  "version": "1.0.0",
+  "description": "Google Apps Script + CaptchaAI: Spreadsheet CAPTCHA Automation - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

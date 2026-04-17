@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-horizontal-scaling-captcha-solving-workers",
+    "description": "Horizontal Scaling CAPTCHA Solving Workers: When and How - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

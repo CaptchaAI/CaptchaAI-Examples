@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-bulkhead-pattern-captcha-solving-isolation",
+    "description": "Bulkhead Pattern: Isolating CAPTCHA Solving Failures - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

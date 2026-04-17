@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-build-automated-testing-pipeline-captchaai",
+    "description": "Build an Automated Testing Pipeline with CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

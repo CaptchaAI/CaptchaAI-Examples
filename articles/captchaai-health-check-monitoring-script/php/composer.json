@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captchaai-health-check-monitoring-script",
+    "description": "CaptchaAI Health Check and Monitoring Script - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

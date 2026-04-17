@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-aws-sns-captchaai-event-driven-captcha",
+    "description": "Building Event-Driven CAPTCHA Solving with AWS SNS and CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

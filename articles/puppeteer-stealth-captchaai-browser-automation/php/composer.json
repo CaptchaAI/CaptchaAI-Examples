@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-puppeteer-stealth-captchaai-browser-automation",
+    "description": "Puppeteer Stealth + CaptchaAI: Reliable Browser Automation - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

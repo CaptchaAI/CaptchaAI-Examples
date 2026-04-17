@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-profiling-captcha-bottlenecks-python",
+    "description": "Profiling CAPTCHA Solving Bottlenecks in Python Applications - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

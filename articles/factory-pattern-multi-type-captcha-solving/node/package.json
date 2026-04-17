@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-factory-pattern-multi-type-captcha-solving",
+  "version": "1.0.0",
+  "description": "Factory Pattern for Multi-Type CAPTCHA Solving with CaptchaAI - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

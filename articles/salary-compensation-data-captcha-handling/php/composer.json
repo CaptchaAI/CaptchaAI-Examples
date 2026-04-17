@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-salary-compensation-data-captcha-handling",
+    "description": "CAPTCHA Handling for Salary and Compensation Data Collection - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

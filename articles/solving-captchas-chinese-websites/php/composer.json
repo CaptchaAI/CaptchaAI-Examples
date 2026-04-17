@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-solving-captchas-chinese-websites",
+    "description": "Solving CAPTCHAs on Chinese Websites with CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-chrome-devtools-network-captcha-debugging",
+    "description": "Chrome DevTools Network Tab for CAPTCHA Debugging - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

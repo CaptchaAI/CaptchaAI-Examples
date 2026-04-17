@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-airline-fare-monitoring-captcha-handling",
+  "version": "1.0.0",
+  "description": "Airline Fare Monitoring with CAPTCHA Handling - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

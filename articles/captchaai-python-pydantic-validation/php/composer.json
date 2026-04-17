@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captchaai-python-pydantic-validation",
+    "description": "CaptchaAI Python Client with Pydantic Validation - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-csv-batch-captcha-solving-python",
+    "description": "CSV-Driven Batch CAPTCHA Solving with Python and CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

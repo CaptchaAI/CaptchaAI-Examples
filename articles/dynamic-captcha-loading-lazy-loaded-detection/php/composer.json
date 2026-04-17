@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-dynamic-captcha-loading-lazy-loaded-detection",
+    "description": "Dynamic CAPTCHA Loading: Detecting Lazy-Loaded CAPTCHAs - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

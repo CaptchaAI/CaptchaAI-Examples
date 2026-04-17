@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-financial-data-scraping-captcha-handling",
+    "description": "Financial Data Scraping with CAPTCHA Handling - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

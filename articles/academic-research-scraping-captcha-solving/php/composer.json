@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-academic-research-scraping-captcha-solving",
+    "description": "Academic Research Web Scraping with CAPTCHA Solving - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

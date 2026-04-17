@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-build-multi-site-data-aggregation-captchaai",
+    "description": "Build a Multi-Site Data Aggregation System with CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

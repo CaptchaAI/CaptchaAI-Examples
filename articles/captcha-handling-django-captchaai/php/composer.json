@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captcha-handling-django-captchaai",
+    "description": "CAPTCHA Handling in Django Applications with CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

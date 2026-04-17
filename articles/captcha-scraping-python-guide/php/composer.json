@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captcha-scraping-python-guide",
+    "description": "CAPTCHA Scraping with Python: Complete Guide - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

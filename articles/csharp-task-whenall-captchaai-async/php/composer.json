@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-csharp-task-whenall-captchaai-async",
+    "description": "Async CAPTCHA Solving in C# with Task.WhenAll and CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

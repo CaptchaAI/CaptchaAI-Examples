@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-rate-limiting-own-captcha-requests",
+    "description": "Rate Limiting Your Own CAPTCHA Solving Requests - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

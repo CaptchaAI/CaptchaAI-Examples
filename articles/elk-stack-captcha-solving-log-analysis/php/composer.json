@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-elk-stack-captcha-solving-log-analysis",
+    "description": "ELK Stack for CAPTCHA Solving Log Analysis - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

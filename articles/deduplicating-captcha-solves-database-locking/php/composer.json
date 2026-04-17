@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-deduplicating-captcha-solves-database-locking",
+    "description": "Deduplicating CAPTCHA Solve Requests with Database Locking - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-nats-messaging-captchaai-task-distribution",
+  "version": "1.0.0",
+  "description": "NATS Messaging + CaptchaAI: Lightweight CAPTCHA Task Distribution - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

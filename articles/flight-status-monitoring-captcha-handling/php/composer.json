@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-flight-status-monitoring-captcha-handling",
+    "description": "CAPTCHA Handling for Flight Status Monitoring - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

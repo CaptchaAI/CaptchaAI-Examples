@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-google-cloud-functions-captchaai-integration",
+    "description": "Google Cloud Functions + CaptchaAI Integration - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

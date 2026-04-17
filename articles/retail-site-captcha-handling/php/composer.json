@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-retail-site-captcha-handling",
+    "description": "Retail Site Data Collection with CAPTCHA Handling - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-parsehub-captchaai-no-code-scraping",
+    "description": "ParseHub + CaptchaAI: No-Code Scraping with CAPTCHA Solving - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

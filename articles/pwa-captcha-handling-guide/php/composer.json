@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-pwa-captcha-handling-guide",
+    "description": "CAPTCHA Handling in Progressive Web Apps (PWAs) - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-time-series-captcha-solve-performance-trends",
+    "description": "Time-Series Data for CAPTCHA Solve Performance Trends - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

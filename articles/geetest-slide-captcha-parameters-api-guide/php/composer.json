@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-geetest-slide-captcha-parameters-api-guide",
+    "description": "GeeTest Slide CAPTCHA Parameters and API Guide - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

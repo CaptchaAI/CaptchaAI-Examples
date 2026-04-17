@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-time-series-captcha-solve-performance-trends",
+  "version": "1.0.0",
+  "description": "Time-Series Data for CAPTCHA Solve Performance Trends - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-retail-inventory-monitoring-captcha-handling",
+    "description": "Retail Inventory Monitoring with CAPTCHA Handling - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-webhook-endpoint-monitoring-captcha-callbacks",
+  "version": "1.0.0",
+  "description": "Webhook Endpoint Monitoring for CAPTCHA Solve Callbacks - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

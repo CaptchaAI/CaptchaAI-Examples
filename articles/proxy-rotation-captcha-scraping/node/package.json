@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-proxy-rotation-captcha-scraping",
+  "version": "1.0.0",
+  "description": "Proxy Rotation for CAPTCHA Scraping - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

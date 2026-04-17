@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-error-budget-tracking-captcha-reliability",
+    "description": "Error Budget Tracking for CAPTCHA Solve Reliability - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

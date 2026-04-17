@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-airtable-captchaai-database-captcha",
+    "description": "Airtable + CaptchaAI: Database-Triggered CAPTCHA Solving - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

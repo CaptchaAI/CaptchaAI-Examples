@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captcha-handling-mobile-appium",
+    "description": "CAPTCHA Handling in Mobile Apps with Appium - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-android-espresso-captcha-testing",
+    "description": "Android CAPTCHA Testing with Espresso and CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

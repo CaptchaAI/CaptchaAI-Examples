@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-solving-geetest-v3-nodejs-captchaai",
+  "version": "1.0.0",
+  "description": "Solving GeeTest v3 with Node.js and CaptchaAI API - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-nodejs-promise-allsettled-batch-captcha",
+  "version": "1.0.0",
+  "description": "Node.js Promise.allSettled for Batch CAPTCHA Solving - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

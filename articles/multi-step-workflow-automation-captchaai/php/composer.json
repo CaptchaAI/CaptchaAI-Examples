@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-multi-step-workflow-automation-captchaai",
+    "description": "Multi-Step Workflow Automation with CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

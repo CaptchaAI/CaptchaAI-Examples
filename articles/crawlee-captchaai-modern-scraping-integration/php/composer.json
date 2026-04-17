@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-crawlee-captchaai-modern-scraping-integration",
+    "description": "Crawlee + CaptchaAI: Modern Scraping Framework Integration - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

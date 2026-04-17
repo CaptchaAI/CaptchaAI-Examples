@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-solve-recaptcha-v3-enterprise-php",
+  "version": "1.0.0",
+  "description": "How to Solve reCAPTCHA v3 Enterprise with PHP - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

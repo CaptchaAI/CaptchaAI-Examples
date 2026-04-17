@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-bright-data-captchaai-proxy-integration",
+  "version": "1.0.0",
+  "description": "Bright Data + CaptchaAI: Complete Proxy Integration Guide - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

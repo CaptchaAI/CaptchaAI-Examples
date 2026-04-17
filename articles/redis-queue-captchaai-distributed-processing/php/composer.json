@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-redis-queue-captchaai-distributed-processing",
+    "description": "Redis Queue + CaptchaAI: Distributed CAPTCHA Processing - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

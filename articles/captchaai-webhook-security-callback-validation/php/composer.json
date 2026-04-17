@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captchaai-webhook-security-callback-validation",
+    "description": "CaptchaAI Webhook Security: Validating Callback Signatures - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

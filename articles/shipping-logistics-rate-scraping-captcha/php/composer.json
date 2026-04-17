@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-shipping-logistics-rate-scraping-captcha",
+    "description": "Shipping and Logistics Rate Scraping with CAPTCHA Solving - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

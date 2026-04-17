@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-storing-captcha-results-postgresql",
+    "description": "Storing CAPTCHA Solve Results in PostgreSQL - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

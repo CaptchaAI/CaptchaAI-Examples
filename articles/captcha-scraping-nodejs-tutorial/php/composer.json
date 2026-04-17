@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captcha-scraping-nodejs-tutorial",
+    "description": "CAPTCHA Scraping with Node.js: Complete Tutorial - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

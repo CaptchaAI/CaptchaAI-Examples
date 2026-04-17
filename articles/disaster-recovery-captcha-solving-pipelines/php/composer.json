@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-disaster-recovery-captcha-solving-pipelines",
+    "description": "Disaster Recovery Planning for CAPTCHA Solving Pipelines - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

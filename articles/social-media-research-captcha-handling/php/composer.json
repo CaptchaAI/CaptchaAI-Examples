@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-social-media-research-captcha-handling",
+    "description": "Social Media Research Data Collection with CAPTCHA Handling - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

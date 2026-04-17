@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-browser-console-captcha-detection-sitekeys-parameters",
+    "description": "Browser Console CAPTCHA Detection: Finding Sitekeys and Parameters - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

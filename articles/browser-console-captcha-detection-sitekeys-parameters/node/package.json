@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-browser-console-captcha-detection-sitekeys-parameters",
+  "version": "1.0.0",
+  "description": "Browser Console CAPTCHA Detection: Finding Sitekeys and Parameters - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

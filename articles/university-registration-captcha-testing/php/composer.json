@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-university-registration-captcha-testing",
+    "description": "CAPTCHA Handling for University Course Registration Testing - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

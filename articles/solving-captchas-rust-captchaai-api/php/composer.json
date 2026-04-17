@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-solving-captchas-rust-captchaai-api",
+    "description": "Solving CAPTCHAs with Rust and CaptchaAI API - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

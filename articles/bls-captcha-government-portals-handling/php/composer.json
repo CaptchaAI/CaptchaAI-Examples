@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-bls-captcha-government-portals-handling",
+    "description": "BLS CAPTCHA in Government Portals: Handling Strategies - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

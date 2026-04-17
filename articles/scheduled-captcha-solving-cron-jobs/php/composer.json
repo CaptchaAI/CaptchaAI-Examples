@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-scheduled-captcha-solving-cron-jobs",
+    "description": "Scheduled CAPTCHA Solving: Cron Jobs and Task Schedulers - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

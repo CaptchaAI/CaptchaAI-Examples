@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-power-automate-captchaai-captcha-solving",
+    "description": "Power Automate + CaptchaAI: Microsoft Flow CAPTCHA Solving - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

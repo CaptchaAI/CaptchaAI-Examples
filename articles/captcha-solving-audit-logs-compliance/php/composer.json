@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captcha-solving-audit-logs-compliance",
+    "description": "CAPTCHA Solving Audit Logs: Tracking Solve Requests for Compliance - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

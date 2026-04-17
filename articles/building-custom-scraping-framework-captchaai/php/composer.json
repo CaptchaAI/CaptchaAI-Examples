@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-building-custom-scraping-framework-captchaai",
+    "description": "Building a Custom Scraping Framework with CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

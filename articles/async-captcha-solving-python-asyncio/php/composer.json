@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-async-captcha-solving-python-asyncio",
+    "description": "Async CAPTCHA Solving with Python asyncio and CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

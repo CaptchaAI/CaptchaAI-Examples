@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-pharmacy-price-comparison-captcha-handling",
+    "description": "CAPTCHA Handling for Pharmacy Price Comparison - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

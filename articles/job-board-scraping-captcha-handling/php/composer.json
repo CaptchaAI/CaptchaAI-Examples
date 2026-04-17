@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-job-board-scraping-captcha-handling",
+    "description": "Job Board Scraping with CAPTCHA Handling Using CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-batch-recaptcha-solving-form-pipelines",
+    "description": "Batch reCAPTCHA Solving for Form Submission Pipelines - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

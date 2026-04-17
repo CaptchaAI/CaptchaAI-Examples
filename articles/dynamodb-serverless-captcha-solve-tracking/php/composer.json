@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-dynamodb-serverless-captcha-solve-tracking",
+    "description": "DynamoDB for Serverless CAPTCHA Solve Tracking - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

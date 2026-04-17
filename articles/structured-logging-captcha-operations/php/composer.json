@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-structured-logging-captcha-operations",
+    "description": "Structured Logging for CAPTCHA Operations - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

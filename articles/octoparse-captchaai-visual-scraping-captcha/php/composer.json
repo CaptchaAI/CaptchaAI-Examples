@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-octoparse-captchaai-visual-scraping-captcha",
+    "description": "Octoparse + CaptchaAI: Visual Scraping with CAPTCHA Handling - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

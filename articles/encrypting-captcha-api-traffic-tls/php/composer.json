@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-encrypting-captcha-api-traffic-tls",
+    "description": "Encrypting CAPTCHA API Traffic: TLS Best Practices - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

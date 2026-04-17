@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-recaptcha-single-page-application-dynamic",
+    "description": "reCAPTCHA in Single Page Applications: Dynamic Loading Patterns - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

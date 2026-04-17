@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-rabbitmq-captchaai-message-queue-integration",
+    "description": "RabbitMQ + CaptchaAI: Message Queue Integration - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

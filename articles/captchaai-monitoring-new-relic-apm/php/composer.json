@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captchaai-monitoring-new-relic-apm",
+    "description": "CaptchaAI Monitoring with New Relic: APM Integration - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

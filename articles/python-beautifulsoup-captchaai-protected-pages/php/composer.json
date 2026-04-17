@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-python-beautifulsoup-captchaai-protected-pages",
+    "description": "Python Beautiful Soup + CaptchaAI: Handling CAPTCHA-Protected Pages - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-scraping-reliability-captcha-handling",
+    "description": "Scraping Reliability Guide: Managing Blocks and CAPTCHA Challenges - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

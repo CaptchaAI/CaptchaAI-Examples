@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-captchaai-load-balancer-architecture",
+    "description": "CaptchaAI Behind a Load Balancer: Architecture Patterns - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

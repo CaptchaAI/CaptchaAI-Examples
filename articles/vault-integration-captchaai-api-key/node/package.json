@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-vault-integration-captchaai-api-key",
+  "version": "1.0.0",
+  "description": "Vault Integration for CaptchaAI API Key Management - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-axios-captchaai-no-browser",
+    "description": "Axios + CaptchaAI: Solve CAPTCHAs Without a Browser - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

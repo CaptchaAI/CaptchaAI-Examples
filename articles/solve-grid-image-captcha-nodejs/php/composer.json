@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-solve-grid-image-captcha-nodejs",
+    "description": "Solve Grid Image CAPTCHA with Node.js and CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

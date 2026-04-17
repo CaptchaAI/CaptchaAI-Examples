@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-market-research-data-collection",
+    "description": "Market Research Data Collection with CAPTCHA Handling - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

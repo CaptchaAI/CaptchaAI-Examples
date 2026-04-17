@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-dependency-injection-captcha-solving-services",
+    "description": "Dependency Injection for CAPTCHA Solving Services - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

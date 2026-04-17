@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-example-discord-webhook-captcha-pipeline-alerts",
+  "version": "1.0.0",
+  "description": "Discord Webhook Alerts for CAPTCHA Pipeline Status - CaptchaAI example",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

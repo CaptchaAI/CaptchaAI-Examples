@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-geetest-token-injection-browser-automation",
+    "description": "GeeTest Token Injection in Browser Automation Frameworks - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

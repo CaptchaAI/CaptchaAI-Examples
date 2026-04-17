@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-build-job-listing-aggregator-captchaai",
+    "description": "Build a Job Listing Aggregator with CaptchaAI - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

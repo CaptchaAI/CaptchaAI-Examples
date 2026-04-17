@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-testing-captchaai-parallel-run-migration",
+    "description": "Testing CaptchaAI Before Full Migration: Parallel Run Guide - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

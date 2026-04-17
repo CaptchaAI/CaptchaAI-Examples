@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-bright-data-captchaai-proxy-integration",
+    "description": "Bright Data + CaptchaAI: Complete Proxy Integration Guide - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

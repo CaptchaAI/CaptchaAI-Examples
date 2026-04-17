@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-news-media-aggregation-captcha-handling",
+    "description": "News and Media Aggregation with CAPTCHA Handling - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

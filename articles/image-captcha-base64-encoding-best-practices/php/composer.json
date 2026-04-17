@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/example-image-captcha-base64-encoding-best-practices",
+    "description": "Image CAPTCHA Base64 Encoding Best Practices - CaptchaAI example",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
