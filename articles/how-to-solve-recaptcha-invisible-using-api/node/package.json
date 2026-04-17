@@ -1,0 +1,14 @@
+{
+  "name": "captchaai-recaptcha-invisible-example",
+  "version": "1.0.0",
+  "description": "Solve reCAPTCHA Invisible using CaptchaAI API",
+  "main": "solve.js",
+  "scripts": {
+    "start": "node solve.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  },
+  "license": "MIT"
+}

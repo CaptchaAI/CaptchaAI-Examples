@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/cloudflare-challenge-example",
+    "description": "Solve Cloudflare Challenge using CaptchaAI API",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

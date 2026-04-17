@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/recaptcha-v2-example",
+    "description": "Solve reCAPTCHA v2 using CaptchaAI API",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

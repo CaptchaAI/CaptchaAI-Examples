@@ -1,0 +1,9 @@
+[package]
+name = "captchaai-image-captcha-example"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+ureq = "2"
+urlencoding = "2"
+base64 = "0.22"

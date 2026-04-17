@@ -1,0 +1,9 @@
+[package]
+name = "captchaai-recaptcha-invisible-example"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+ureq = "2"
+serde_json = "1"
+urlencoding = "2"

@@ -1,0 +1,25 @@
+.env
+__pycache__/
+*.pyc
+node_modules/
+vendor/
+composer.lock
+package-lock.json
+.DS_Store
+Thumbs.db
+# Go
+go.sum
+# Java
+*.class
+# C#
+bin/
+obj/
+# Ruby
+Gemfile.lock
+# Rust
+target/
+Cargo.lock
+# Kotlin
+*.jar
+# Bash
+*.log

@@ -52,8 +52,18 @@ CaptchaAI-Examples/
 | Example | CAPTCHA Type | Languages | Article |
 |---------|-------------|-----------|---------|
 | [captchaai-quickstart](articles/captchaai-quickstart/) | Cloudflare Turnstile | Python, Node.js, PHP, Go, Java, C#, Ruby, Rust, Kotlin, Bash | [Blog](https://blog.captchaai.com/captchaai-quickstart) |
-
-_More examples are added as articles are published. Check back regularly._
+| [how-to-solve-recaptcha-v2-using-api](articles/how-to-solve-recaptcha-v2-using-api/) | reCAPTCHA v2 | Python, Node.js, PHP, Go, Java, C#, Ruby, Rust, Kotlin, Bash | [Blog](https://blog.captchaai.com/how-to-solve-recaptcha-v2-using-api) |
+| [how-to-solve-recaptcha-v3-automatically-using-api](articles/how-to-solve-recaptcha-v3-automatically-using-api/) | reCAPTCHA v3 | Python, Node.js, PHP, Go, Java, C#, Ruby, Rust, Kotlin, Bash | [Blog](https://blog.captchaai.com/how-to-solve-recaptcha-v3-automatically-using-api) |
+| [how-to-solve-recaptcha-v2-enterprise-using-api](articles/how-to-solve-recaptcha-v2-enterprise-using-api/) | reCAPTCHA v2 Enterprise | Python, Node.js, PHP, Go, Java, C#, Ruby, Rust, Kotlin, Bash | [Blog](https://blog.captchaai.com/how-to-solve-recaptcha-v2-enterprise-using-api) |
+| [how-to-solve-recaptcha-v3-enterprise-using-api](articles/how-to-solve-recaptcha-v3-enterprise-using-api/) | reCAPTCHA v3 Enterprise | Python, Node.js, PHP, Go, Java, C#, Ruby, Rust, Kotlin, Bash | [Blog](https://blog.captchaai.com/how-to-solve-recaptcha-v3-enterprise-using-api) |
+| [how-to-solve-recaptcha-invisible-using-api](articles/how-to-solve-recaptcha-invisible-using-api/) | reCAPTCHA Invisible | Python, Node.js, PHP, Go, Java, C#, Ruby, Rust, Kotlin, Bash | [Blog](https://blog.captchaai.com/how-to-solve-recaptcha-invisible-using-api) |
+| [how-to-solve-recaptcha-v2-callback-using-api](articles/how-to-solve-recaptcha-v2-callback-using-api/) | reCAPTCHA v2 (Callback) | Python, Node.js, PHP, Go, Java, C#, Ruby, Rust, Kotlin, Bash | [Blog](https://blog.captchaai.com/how-to-solve-recaptcha-v2-callback-using-api) |
+| [how-to-solve-cloudflare-turnstile-using-api](articles/how-to-solve-cloudflare-turnstile-using-api/) | Cloudflare Turnstile | Python, Node.js, PHP, Go, Java, C#, Ruby, Rust, Kotlin, Bash | [Blog](https://blog.captchaai.com/how-to-solve-cloudflare-turnstile-using-api) |
+| [how-to-solve-cloudflare-challenge-using-api](articles/how-to-solve-cloudflare-challenge-using-api/) | Cloudflare Challenge | Python, Node.js, PHP, Go, Java, C#, Ruby, Rust, Kotlin, Bash | [Blog](https://blog.captchaai.com/how-to-solve-cloudflare-challenge-using-api) |
+| [how-to-solve-geetest-v3-using-api](articles/how-to-solve-geetest-v3-using-api/) | GeeTest v3 | Python, Node.js, PHP, Go, Java, C#, Ruby, Rust, Kotlin, Bash | [Blog](https://blog.captchaai.com/how-to-solve-geetest-v3-using-api) |
+| [how-to-solve-bls-captcha-step-by-step](articles/how-to-solve-bls-captcha-step-by-step/) | BLS CAPTCHA | Python, Node.js, PHP, Go, Java, C#, Ruby, Rust, Kotlin, Bash | [Blog](https://blog.captchaai.com/how-to-solve-bls-captcha-step-by-step) |
+| [image-captcha-solving-using-api](articles/image-captcha-solving-using-api/) | Image/OCR CAPTCHA | Python, Node.js, PHP, Go, Java, C#, Ruby, Rust, Kotlin, Bash | [Blog](https://blog.captchaai.com/image-captcha-solving-using-api) |
+| [how-to-solve-grid-image-captcha-automatically](articles/how-to-solve-grid-image-captcha-automatically/) | Grid Image CAPTCHA | Python, Node.js, PHP, Go, Java, C#, Ruby, Rust, Kotlin, Bash | [Blog](https://blog.captchaai.com/how-to-solve-grid-image-captcha-automatically) |
 
 ## How each example works
 

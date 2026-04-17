@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/bls-captcha-example",
+    "description": "Solve BLS CAPTCHA using CaptchaAI API",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/recaptcha-invisible-example",
+    "description": "Solve reCAPTCHA Invisible using CaptchaAI API",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

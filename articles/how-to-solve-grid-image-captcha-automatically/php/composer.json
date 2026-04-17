@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/grid-image-captcha-example",
+    "description": "Solve Grid Image CAPTCHA using CaptchaAI API",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

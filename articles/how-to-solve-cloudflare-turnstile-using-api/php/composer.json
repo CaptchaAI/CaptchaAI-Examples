@@ -1,0 +1,7 @@
+{
+    "name": "captchaai/cloudflare-turnstile-example",
+    "description": "Solve Cloudflare Turnstile using CaptchaAI API",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
