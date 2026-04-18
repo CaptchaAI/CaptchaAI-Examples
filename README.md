@@ -1,8 +1,8 @@
 ﻿# CaptchaAI Examples
 
-Full working code examples for the [CaptchaAI](https://captchaai.com) CAPTCHA solving API.
+Public code examples for the [CaptchaAI](https://captchaai.com) CAPTCHA solving API.
 
-Every example in this repository is a complete, runnable project with setup instructions, environment configuration, polling, retries, error handling, and expected output.
+This repository is published for clients who want a runnable starting point fast. Each pack links back to a blog article, includes setup instructions, and shows the current support level honestly.
 
 ## Quick start
 
@@ -15,6 +15,29 @@ Every example in this repository is a complete, runnable project with setup inst
 3. Pick an example from the `articles/` directory
 4. Follow the README inside that example folder
 
+## What this repo is for
+
+- Client-facing example packs that help readers move from article to working code.
+- Public companion to the CaptchaAI blog at `blog.captchaai.com`.
+- A practical reference library, not a public window into CaptchaAI's internal content factory.
+- Published example packs only. Internal templates, tools, scaffolding, repair tooling, and validation automation are intentionally kept in the private factory repo.
+
+## Support levels
+
+Each example pack is labeled with the level we can honestly stand behind today:
+
+| Tier | Badge | What it means |
+|------|-------|---------------|
+| Verified | 🟢 | The pack's reference flow has been reviewed closely and checked against the current CaptchaAI flow and repo validation. This is our highest-confidence level, but not every included language always receives identical review depth. |
+| Standard | 🟡 | The pack is public, documented, and structurally checked. At least one implementation has been reviewed, while other included implementations may still be receiving lighter validation or iterative improvement. |
+| Available | ⚪ | The pack is published for client reference with lighter review depth. It is available because it is useful, not because we claim perfect parity across every implementation. |
+
+## Language coverage
+
+Many packs currently include Python, Node.js, PHP, Go, Java, C#, Ruby, Rust, Kotlin, and Bash.
+
+That is a current coverage choice, not a permanent promise for every pack. The pack README and support tier are the source of truth for what level of confidence you should expect right now.
+
 ## Repository structure
 
 ```
@@ -24,28 +47,10 @@ CaptchaAI-Examples/
       README.md                 # Setup, usage, expected output, troubleshooting
       .env.example              # Required environment variables
       .gitignore                # Excludes .env and build artifacts
-      python/                   # Python implementation
-      node/                     # Node.js implementation
-      php/                      # PHP implementation
-      go/                       # Go implementation
-      java/                     # Java implementation
-      csharp/                   # C# implementation
-      ruby/                     # Ruby implementation
-      rust/                     # Rust implementation
-      kotlin/                   # Kotlin implementation
-      bash/                     # Bash/cURL implementation
-  templates/                    # Starter templates for new examples
-    python-basic/
-    node-basic/
-    php-basic/
-    go-basic/
-    java-basic/
-    csharp-basic/
-    ruby-basic/
-    rust-basic/
-    kotlin-basic/
-    bash-basic/
+      {language}/               # One or more supported implementations for that pack
 ```
+
+Internal factory scripts, tools, and templates are intentionally not part of this public repository.
 
 ## Examples
 

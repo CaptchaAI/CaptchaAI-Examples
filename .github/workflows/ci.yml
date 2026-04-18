@@ -231,7 +231,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Check required files and ALL 10 language directories
+      - name: Check required files and at least one supported implementation
         run: |
           errors=0
           ALL_LANGS="python node php go java csharp ruby rust kotlin bash"
@@ -248,19 +248,23 @@ jobs:
               errors=$((errors + 1))
             fi
 
-            # ALL 10 language directories required
+            # At least one supported language directory required
+            lang_count=0
             for lang in $ALL_LANGS; do
-              if [ ! -d "$dir/$lang" ]; then
-                echo "ERROR: $dir is missing $lang/ directory"
-                errors=$((errors + 1))
+              if [ -d "$dir/$lang" ]; then
+                lang_count=$((lang_count + 1))
               fi
             done
+            if [ $lang_count -eq 0 ]; then
+              echo "ERROR: $dir does not contain a supported language directory"
+              errors=$((errors + 1))
+            fi
           done
           if [ $errors -gt 0 ]; then
             echo "Found $errors structural errors"
             exit 1
           fi
-          echo "All example packs have complete structure (10 languages)"
+          echo "All example packs have required files and at least one supported implementation"
 
       - name: Check no .env files committed
         run: |
