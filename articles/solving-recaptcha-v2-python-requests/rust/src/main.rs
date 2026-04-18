@@ -1,4 +1,4 @@
-// Solve reCAPTCHA v3 using the CaptchaAI API.
+// Solve reCAPTCHA v2 using the CaptchaAI API.
 //
 // Usage:
 //   cargo run
@@ -73,9 +73,9 @@ fn main() {
     }
 
     // Submit
-    println!("[*] Submitting reCAPTCHA v3 task...");
+    println!("[*] Submitting reCAPTCHA v2 task...");
     let submit_url = format!(
-        "https://ocr.captchaai.com/in.php?key={}&method=userrecaptcha&googlekey={}&pageurl={}&version=v3&action=verify&min_score=0.3&json=1",
+        "https://ocr.captchaai.com/in.php?key={}&method=userrecaptcha&googlekey={}&pageurl={}&json=1",
         urlencoding::encode(&api_key), urlencoding::encode(&googlekey), urlencoding::encode(&pageurl)
     );
 

@@ -1,4 +1,4 @@
-// Solve reCAPTCHA v3 using the CaptchaAI API.
+// Solve GeeTest v3 using the CaptchaAI API.
 //
 // Usage:
 //   dotnet run
@@ -36,13 +36,15 @@ class Solve
     private readonly string _apiKey;
     private readonly int _pollInterval;
     private readonly int _maxTimeout;
-    private readonly string _googlekey;
+    private readonly string _gt;
+    private readonly string _challenge;
     private readonly string _pageurl;
 
     public Solve(Dictionary<string, string> env)
     {
         _apiKey = GetEnv(env, "CAPTCHAAI_API_KEY", "");
-        _googlekey = GetEnv(env, "CAPTCHA_GOOGLEKEY", "");
+        _gt = GetEnv(env, "CAPTCHA_GT", "");
+        _challenge = GetEnv(env, "CAPTCHA_CHALLENGE", "");
         _pageurl = GetEnv(env, "CAPTCHA_PAGEURL", "");
         _pollInterval = int.Parse(GetEnv(env, "POLL_INTERVAL", "5"));
         _maxTimeout = int.Parse(GetEnv(env, "MAX_TIMEOUT", "120"));
@@ -67,14 +69,12 @@ class Solve
 
     private async Task<string> SubmitTaskAsync()
     {
-        Console.WriteLine("[*] Submitting reCAPTCHA v3 task...");
+        Console.WriteLine("[*] Submitting GeeTest v3 task...");
         var query = $"key={Uri.EscapeDataString(_apiKey)}" +
-                    $"&method=userrecaptcha" +
-                    $"&googlekey={Uri.EscapeDataString(_googlekey)}" +
+                    $"&method=geetest" +
+                    $"&gt={Uri.EscapeDataString(_gt)}" +
+                    $"&challenge={Uri.EscapeDataString(_challenge)}" +
                     $"&pageurl={Uri.EscapeDataString(_pageurl)}" +
-                    $"&version=v3" +
-                    $"&action=verify" +
-                    $"&min_score=0.3" +
                     $"&json=1";
 
         string body;

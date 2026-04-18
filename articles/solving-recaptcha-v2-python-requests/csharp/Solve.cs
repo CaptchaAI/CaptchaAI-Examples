@@ -1,4 +1,4 @@
-// Solve reCAPTCHA v3 using the CaptchaAI API.
+// Solve reCAPTCHA v2 using the CaptchaAI API.
 //
 // Usage:
 //   dotnet run
@@ -67,14 +67,11 @@ class Solve
 
     private async Task<string> SubmitTaskAsync()
     {
-        Console.WriteLine("[*] Submitting reCAPTCHA v3 task...");
+        Console.WriteLine("[*] Submitting reCAPTCHA v2 task...");
         var query = $"key={Uri.EscapeDataString(_apiKey)}" +
                     $"&method=userrecaptcha" +
                     $"&googlekey={Uri.EscapeDataString(_googlekey)}" +
                     $"&pageurl={Uri.EscapeDataString(_pageurl)}" +
-                    $"&version=v3" +
-                    $"&action=verify" +
-                    $"&min_score=0.3" +
                     $"&json=1";
 
         string body;

@@ -1,4 +1,4 @@
-"""Solve reCAPTCHA v3 using the CaptchaAI API.
+"""Solve reCAPTCHA v2 using the CaptchaAI API.
 
 Usage:
     pip install -r requirements.txt
@@ -42,15 +42,12 @@ def validate_config() -> None:
 
 def submit_task() -> str:
     """Submit the CAPTCHA task and return the task ID."""
-    print("[*] Submitting reCAPTCHA v3 task...")
+    print("[*] Submitting reCAPTCHA v2 task...")
     payload = {
         "key": API_KEY,
         "method": "userrecaptcha",
         "googlekey": CAPTCHA_GOOGLEKEY,
         "pageurl": CAPTCHA_PAGEURL,
-        "version": "v3",
-        "action": "verify",
-        "min_score": "0.3",
         "json": "1",
     }
 

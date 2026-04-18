@@ -1,4 +1,4 @@
-// Solve reCAPTCHA v3 using the CaptchaAI API.
+// Solve GeeTest v3 using the CaptchaAI API.
 //
 // Usage:
 //   go run solve.go
@@ -110,7 +110,8 @@ func main() {
 	env := loadEnv(envPath)
 
 	apiKey := getEnv(env, "CAPTCHAAI_API_KEY", "")
-	googlekey := getEnv(env, "CAPTCHA_GOOGLEKEY", "")
+	gt := getEnv(env, "CAPTCHA_GT", "")
+	challenge := getEnv(env, "CAPTCHA_CHALLENGE", "")
 	pageurl := getEnv(env, "CAPTCHA_PAGEURL", "")
 	pollInterval := getEnvInt(env, "POLL_INTERVAL", 5)
 	maxTimeout := getEnvInt(env, "MAX_TIMEOUT", 120)
@@ -123,15 +124,13 @@ func main() {
 	}
 
 	// Submit
-	fmt.Println("[*] Submitting reCAPTCHA v3 task...")
+	fmt.Println("[*] Submitting GeeTest v3 task...")
 	params := url.Values{
 		"key":    {apiKey},
-		"method": {"userrecaptcha"},
-		"googlekey": {googlekey},
+		"method": {"geetest"},
+		"gt": {gt},
+		"challenge": {challenge},
 		"pageurl": {pageurl},
-		"version": {"v3"},
-		"action": {"verify"},
-		"min_score": {"0.3"},
 		"json": {"1"},
 	}
 

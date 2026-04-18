@@ -1,6 +1,6 @@
-﻿# Solving GeeTest v3 with Python and CaptchaAI API
+# Solving GeeTest v3 with Python and CaptchaAI API
 
-Full working example for solving reCAPTCHA v3 using the CaptchaAI API.
+Full working example for solving GeeTest v3 using the CaptchaAI API.
 
 **Languages:** Python, Node.js, PHP, Go, Java, C#, Ruby, Rust, Kotlin, Bash
 
@@ -12,7 +12,7 @@ This example accompanies the blog article:
 ## Prerequisites
 
 - A CaptchaAI account with API key ([get one here](https://captchaai.com))
-- A target page with reCAPTCHA v3 for testing
+- A target page with GeeTest v3 for testing
 
 ## Quick start
 
@@ -81,7 +81,7 @@ cd bash && chmod +x solve.sh && ./solve.sh
 
 ## How it works
 
-1. **Submit** — Sends the CAPTCHA parameters to `https://ocr.captchaai.com/in.php` using method `userrecaptcha`
+1. **Submit** — Sends the CAPTCHA parameters to `https://ocr.captchaai.com/in.php` using method `geetest`
 2. **Poll** — Checks `https://ocr.captchaai.com/res.php` every 5 seconds for the result
 3. **Result** — Returns the solved token/answer ready for use
 

@@ -1,5 +1,5 @@
 /**
- * Solve reCAPTCHA v3 using the CaptchaAI API.
+ * Solve reCAPTCHA v2 using the CaptchaAI API.
  *
  * Usage:
  *   javac Solve.java
@@ -68,9 +68,9 @@ public class Solve {
     }
 
     private String submitTask() {
-        System.out.println("[*] Submitting reCAPTCHA v3 task...");
+        System.out.println("[*] Submitting reCAPTCHA v2 task...");
         String params = String.format(
-            "key=%s&method=userrecaptcha&googlekey=%s&pageurl=%s&version=v3&action=verify&min_score=0.3&json=1",
+            "key=%s&method=userrecaptcha&googlekey=%s&pageurl=%s&json=1",
             URLEncoder.encode(apiKey, java.nio.charset.StandardCharsets.UTF_8),
             URLEncoder.encode(googlekey, java.nio.charset.StandardCharsets.UTF_8),
             URLEncoder.encode(pageurl, java.nio.charset.StandardCharsets.UTF_8));

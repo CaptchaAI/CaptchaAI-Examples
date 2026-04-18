@@ -1,6 +1,6 @@
-﻿# Solving reCAPTCHA v2 with Python Requests and CaptchaAI
+# Solving reCAPTCHA v2 with Python Requests and CaptchaAI
 
-Full working example for solving reCAPTCHA v3 using the CaptchaAI API.
+Full working example for solving reCAPTCHA v2 using the CaptchaAI API.
 
 **Languages:** Python, Node.js, PHP, Go, Java, C#, Ruby, Rust, Kotlin, Bash
 
@@ -12,7 +12,7 @@ This example accompanies the blog article:
 ## Prerequisites
 
 - A CaptchaAI account with API key ([get one here](https://captchaai.com))
-- A target page with reCAPTCHA v3 for testing
+- A target page with reCAPTCHA v2 for testing
 
 ## Quick start
 

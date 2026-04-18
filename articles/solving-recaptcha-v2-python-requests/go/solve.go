@@ -1,4 +1,4 @@
-// Solve reCAPTCHA v3 using the CaptchaAI API.
+// Solve reCAPTCHA v2 using the CaptchaAI API.
 //
 // Usage:
 //   go run solve.go
@@ -123,15 +123,12 @@ func main() {
 	}
 
 	// Submit
-	fmt.Println("[*] Submitting reCAPTCHA v3 task...")
+	fmt.Println("[*] Submitting reCAPTCHA v2 task...")
 	params := url.Values{
 		"key":    {apiKey},
 		"method": {"userrecaptcha"},
 		"googlekey": {googlekey},
 		"pageurl": {pageurl},
-		"version": {"v3"},
-		"action": {"verify"},
-		"min_score": {"0.3"},
 		"json": {"1"},
 	}
 

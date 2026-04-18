@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Solve reCAPTCHA v3 using the CaptchaAI API.
+# Solve reCAPTCHA v2 using the CaptchaAI API.
 #
 # Usage:
 #   chmod +x solve.sh
@@ -75,9 +75,9 @@ if ! command -v jq &> /dev/null; then
 fi
 
 # Submit
-echo "[*] Submitting reCAPTCHA v3 task..."
+echo "[*] Submitting reCAPTCHA v2 task..."
 SUBMIT_RESPONSE=$(curl -s --max-time 30 \
-    "${SUBMIT_URL}?key=${CAPTCHAAI_API_KEY}&method=userrecaptcha&googlekey=${CAPTCHA_GOOGLEKEY}&pageurl=${CAPTCHA_PAGEURL}&version=v3&action=verify&min_score=0.3&json=1")
+    "${SUBMIT_URL}?key=${CAPTCHAAI_API_KEY}&method=userrecaptcha&googlekey=${CAPTCHA_GOOGLEKEY}&pageurl=${CAPTCHA_PAGEURL}&json=1")
 
 if [[ -z "$SUBMIT_RESPONSE" ]]; then
     echo "[!] Network error during submission."

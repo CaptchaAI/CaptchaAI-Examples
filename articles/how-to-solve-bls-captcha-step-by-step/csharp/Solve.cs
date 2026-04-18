@@ -3,7 +3,12 @@
 // Usage:
 //   dotnet run
 
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Net.Http;
 using System.Text.Json;
+using System.Threading.Tasks;
 
 const string SubmitUrl = "https://ocr.captchaai.com/in.php";
 const string ResultUrl = "https://ocr.captchaai.com/res.php";

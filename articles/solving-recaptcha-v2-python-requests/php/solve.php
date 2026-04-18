@@ -1,6 +1,6 @@
 <?php
 /**
- * Solve reCAPTCHA v3 using the CaptchaAI API.
+ * Solve reCAPTCHA v2 using the CaptchaAI API.
  *
  * Usage:
  *   composer install
@@ -36,15 +36,12 @@ if (empty($apiKey) || $apiKey === 'YOUR_API_KEY') {
 }
 
 // --- Submit task ---
-echo "[*] Submitting reCAPTCHA v3 task...\n";
+echo "[*] Submitting reCAPTCHA v2 task...\n";
 $submitParams = http_build_query([
     'key' => $apiKey,
     'method' => 'userrecaptcha',
     'googlekey' => $googlekey,
     'pageurl' => $pageurl,
-    'version' => 'v3',
-    'action' => 'verify',
-    'min_score' => '0.3',
     'json' => '1',
 ]);
 

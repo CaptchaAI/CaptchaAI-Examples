@@ -1,5 +1,5 @@
 /**
- * Solve reCAPTCHA v3 using the CaptchaAI API.
+ * Solve reCAPTCHA v2 using the CaptchaAI API.
  *
  * Usage:
  *   npm install
@@ -38,16 +38,13 @@ function validateConfig() {
 }
 
 async function submitTask() {
-  console.log("[*] Submitting reCAPTCHA v3 task...");
+  console.log("[*] Submitting reCAPTCHA v2 task...");
 
   const params = {
     key: API_KEY,
     method: "userrecaptcha",
     googlekey,
     pageurl,
-    version: "v3",
-    action: "verify",
-    min_score: "0.3",
     json: "1",
   };
 

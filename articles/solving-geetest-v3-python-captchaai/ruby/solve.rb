@@ -1,4 +1,4 @@
-# Solve reCAPTCHA v3 using the CaptchaAI API.
+# Solve GeeTest v3 using the CaptchaAI API.
 #
 # Usage:
 #   ruby solve.rb
@@ -44,7 +44,8 @@ end
 env = load_env(File.join(__dir__, "..", ".env"))
 
 API_KEY = get_env(env, "CAPTCHAAI_API_KEY")
-GOOGLEKEY = get_env(env, "CAPTCHA_GOOGLEKEY")
+GT = get_env(env, "CAPTCHA_GT")
+CHALLENGE = get_env(env, "CAPTCHA_CHALLENGE")
 PAGEURL = get_env(env, "CAPTCHA_PAGEURL")
 POLL_INTERVAL = get_env(env, "POLL_INTERVAL", "5").to_i
 MAX_TIMEOUT = get_env(env, "MAX_TIMEOUT", "120").to_i
@@ -75,16 +76,14 @@ if API_KEY.empty? || API_KEY == "YOUR_API_KEY"
 end
 
 # Submit
-puts "[*] Submitting reCAPTCHA v3 task..."
+puts "[*] Submitting GeeTest v3 task..."
 submit_uri = URI.parse(SUBMIT_URL)
 submit_uri.query = URI.encode_www_form(
   key: API_KEY,
-  method: "userrecaptcha",
-  googlekey: GOOGLEKEY,
+  method: "geetest",
+  gt: GT,
+  challenge: CHALLENGE,
   pageurl: PAGEURL,
-  version: "v3",
-  action: "verify",
-  min_score: "0.3",
   json: "1"
 )
 

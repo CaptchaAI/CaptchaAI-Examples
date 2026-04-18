@@ -1,4 +1,4 @@
-"""Solve reCAPTCHA v3 using the CaptchaAI API.
+"""Solve GeeTest v3 using the CaptchaAI API.
 
 Usage:
     pip install -r requirements.txt
@@ -20,7 +20,8 @@ SUBMIT_URL = "https://ocr.captchaai.com/in.php"
 RESULT_URL = "https://ocr.captchaai.com/res.php"
 
 API_KEY = os.getenv("CAPTCHAAI_API_KEY", "")
-CAPTCHA_GOOGLEKEY = os.getenv("CAPTCHA_GOOGLEKEY", "")
+CAPTCHA_GT = os.getenv("CAPTCHA_GT", "")
+CAPTCHA_CHALLENGE = os.getenv("CAPTCHA_CHALLENGE", "")
 CAPTCHA_PAGEURL = os.getenv("CAPTCHA_PAGEURL", "")
 POLL_INTERVAL = int(os.getenv("POLL_INTERVAL", "5"))
 MAX_TIMEOUT = int(os.getenv("MAX_TIMEOUT", "120"))
@@ -42,15 +43,13 @@ def validate_config() -> None:
 
 def submit_task() -> str:
     """Submit the CAPTCHA task and return the task ID."""
-    print("[*] Submitting reCAPTCHA v3 task...")
+    print("[*] Submitting GeeTest v3 task...")
     payload = {
         "key": API_KEY,
-        "method": "userrecaptcha",
-        "googlekey": CAPTCHA_GOOGLEKEY,
+        "method": "geetest",
+        "gt": CAPTCHA_GT,
+        "challenge": CAPTCHA_CHALLENGE,
         "pageurl": CAPTCHA_PAGEURL,
-        "version": "v3",
-        "action": "verify",
-        "min_score": "0.3",
         "json": "1",
     }
 

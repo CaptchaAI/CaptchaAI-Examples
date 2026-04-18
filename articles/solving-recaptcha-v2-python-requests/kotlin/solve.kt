@@ -1,5 +1,5 @@
 /**
- * Solve reCAPTCHA v3 using the CaptchaAI API.
+ * Solve reCAPTCHA v2 using the CaptchaAI API.
  *
  * Usage:
  *   kotlinc solve.kt -include-runtime -d solve.jar
@@ -93,9 +93,9 @@ fun main() {
         exitProcess(1)
     }
     // Submit
-    println("[*] Submitting reCAPTCHA v3 task...")
+    println("[*] Submitting reCAPTCHA v2 task...")
     val enc = java.nio.charset.StandardCharsets.UTF_8.name()
-    val submitParams = "key=${URLEncoder.encode(apiKey, enc)}&method=userrecaptcha&googlekey=${URLEncoder.encode(googlekey, enc)}&pageurl=${URLEncoder.encode(pageurl, enc)}&version=v3&action=verify&min_score=0.3&json=1"
+    val submitParams = "key=${URLEncoder.encode(apiKey, enc)}&method=userrecaptcha&googlekey=${URLEncoder.encode(googlekey, enc)}&pageurl=${URLEncoder.encode(pageurl, enc)}&json=1"
 
     val submitBody: String
     try { submitBody = httpGet("$SUBMIT_URL?$submitParams") }

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Solve reCAPTCHA v3 using the CaptchaAI API.
+# Solve GeeTest v3 using the CaptchaAI API.
 #
 # Usage:
 #   chmod +x solve.sh
@@ -27,7 +27,8 @@ if [[ -f "$ENV_FILE" ]]; then
 fi
 
 CAPTCHAAI_API_KEY="${CAPTCHAAI_API_KEY:-}"
-CAPTCHA_GOOGLEKEY="${CAPTCHA_GOOGLEKEY:-}"
+CAPTCHA_GT="${CAPTCHA_GT:-}"
+CAPTCHA_CHALLENGE="${CAPTCHA_CHALLENGE:-}"
 CAPTCHA_PAGEURL="${CAPTCHA_PAGEURL:-}"
 POLL_INTERVAL="${POLL_INTERVAL:-5}"
 MAX_TIMEOUT="${MAX_TIMEOUT:-120}"
@@ -75,9 +76,9 @@ if ! command -v jq &> /dev/null; then
 fi
 
 # Submit
-echo "[*] Submitting reCAPTCHA v3 task..."
+echo "[*] Submitting GeeTest v3 task..."
 SUBMIT_RESPONSE=$(curl -s --max-time 30 \
-    "${SUBMIT_URL}?key=${CAPTCHAAI_API_KEY}&method=userrecaptcha&googlekey=${CAPTCHA_GOOGLEKEY}&pageurl=${CAPTCHA_PAGEURL}&version=v3&action=verify&min_score=0.3&json=1")
+    "${SUBMIT_URL}?key=${CAPTCHAAI_API_KEY}&method=geetest&gt=${CAPTCHA_GT}&challenge=${CAPTCHA_CHALLENGE}&pageurl=${CAPTCHA_PAGEURL}&json=1")
 
 if [[ -z "$SUBMIT_RESPONSE" ]]; then
     echo "[!] Network error during submission."

@@ -1,4 +1,4 @@
-// Solve reCAPTCHA v3 using the CaptchaAI API.
+// Solve GeeTest v3 using the CaptchaAI API.
 //
 // Usage:
 //   cargo run
@@ -54,7 +54,8 @@ fn main() {
     let env = load_env("../.env");
 
     let api_key = get_env(&env, "CAPTCHAAI_API_KEY", "");
-    let googlekey = get_env(&env, "CAPTCHA_GOOGLEKEY", "");
+    let gt = get_env(&env, "CAPTCHA_GT", "");
+    let challenge = get_env(&env, "CAPTCHA_CHALLENGE", "");
     let pageurl = get_env(&env, "CAPTCHA_PAGEURL", "");
     let poll_interval: u64 = get_env(&env, "POLL_INTERVAL", "5").parse().unwrap_or(5);
     let max_timeout: u64 = get_env(&env, "MAX_TIMEOUT", "120").parse().unwrap_or(120);
@@ -73,10 +74,10 @@ fn main() {
     }
 
     // Submit
-    println!("[*] Submitting reCAPTCHA v3 task...");
+    println!("[*] Submitting GeeTest v3 task...");
     let submit_url = format!(
-        "https://ocr.captchaai.com/in.php?key={}&method=userrecaptcha&googlekey={}&pageurl={}&version=v3&action=verify&min_score=0.3&json=1",
-        urlencoding::encode(&api_key), urlencoding::encode(&googlekey), urlencoding::encode(&pageurl)
+        "https://ocr.captchaai.com/in.php?key={}&method=geetest&gt={}&challenge={}&pageurl={}&json=1",
+        urlencoding::encode(&api_key), urlencoding::encode(&gt), urlencoding::encode(&challenge), urlencoding::encode(&pageurl)
     );
 
     let client = ureq::AgentBuilder::new()

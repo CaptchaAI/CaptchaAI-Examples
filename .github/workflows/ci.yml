@@ -169,6 +169,62 @@ jobs:
           fi
           echo "Kotlin syntax check complete"
 
+  lint-csharp:
+    name: Lint C# examples
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Check C# syntax
+        run: |
+          errors=0
+          for dir in articles/*/csharp; do
+            if [ -f "$dir/Solve.cs" ] && [ -f "$dir/Solve.csproj" ]; then
+              cd "$dir"
+              if ! dotnet build --nologo -v q 2>&1; then
+                errors=$((errors + 1))
+              fi
+              rm -rf bin obj
+              cd - > /dev/null
+            fi
+          done
+          if [ $errors -gt 0 ]; then
+            echo "Found $errors C# compilation errors"
+            exit 1
+          fi
+          echo "All C# examples compile"
+
+  lint-rust:
+    name: Lint Rust examples
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - name: Check Rust syntax
+        run: |
+          errors=0
+          for dir in articles/*/rust; do
+            if [ -f "$dir/Cargo.toml" ]; then
+              cd "$dir"
+              if ! cargo check --message-format=short 2>&1; then
+                errors=$((errors + 1))
+              fi
+              rm -rf target
+              cd - > /dev/null
+            fi
+          done
+          if [ $errors -gt 0 ]; then
+            echo "Found $errors Rust compilation errors"
+            exit 1
+          fi
+          echo "All Rust examples compile"
+
   validate-structure:
     name: Validate example pack structure
     runs-on: ubuntu-latest

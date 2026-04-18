@@ -1,6 +1,6 @@
 <?php
 /**
- * Solve reCAPTCHA v3 using the CaptchaAI API.
+ * Solve GeeTest v3 using the CaptchaAI API.
  *
  * Usage:
  *   composer install
@@ -17,7 +17,8 @@ define('SUBMIT_URL', 'https://ocr.captchaai.com/in.php');
 define('RESULT_URL', 'https://ocr.captchaai.com/res.php');
 
 $apiKey = $_ENV['CAPTCHAAI_API_KEY'] ?? '';
-$googlekey = $_ENV['CAPTCHA_GOOGLEKEY'] ?? '';
+$gt = $_ENV['CAPTCHA_GT'] ?? '';
+$challenge = $_ENV['CAPTCHA_CHALLENGE'] ?? '';
 $pageurl = $_ENV['CAPTCHA_PAGEURL'] ?? '';
 $pollInterval = (int)($_ENV['POLL_INTERVAL'] ?? 5);
 $maxTimeout = (int)($_ENV['MAX_TIMEOUT'] ?? 120);
@@ -36,15 +37,13 @@ if (empty($apiKey) || $apiKey === 'YOUR_API_KEY') {
 }
 
 // --- Submit task ---
-echo "[*] Submitting reCAPTCHA v3 task...\n";
+echo "[*] Submitting GeeTest v3 task...\n";
 $submitParams = http_build_query([
     'key' => $apiKey,
-    'method' => 'userrecaptcha',
-    'googlekey' => $googlekey,
+    'method' => 'geetest',
+    'gt' => $gt,
+    'challenge' => $challenge,
     'pageurl' => $pageurl,
-    'version' => 'v3',
-    'action' => 'verify',
-    'min_score' => '0.3',
     'json' => '1',
 ]);
 

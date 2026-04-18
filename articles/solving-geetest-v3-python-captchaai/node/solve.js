@@ -1,5 +1,5 @@
 /**
- * Solve reCAPTCHA v3 using the CaptchaAI API.
+ * Solve GeeTest v3 using the CaptchaAI API.
  *
  * Usage:
  *   npm install
@@ -14,7 +14,8 @@ const SUBMIT_URL = "https://ocr.captchaai.com/in.php";
 const RESULT_URL = "https://ocr.captchaai.com/res.php";
 
 const API_KEY = process.env.CAPTCHAAI_API_KEY || "";
-const googlekey = process.env.CAPTCHA_GOOGLEKEY || "";
+const gt = process.env.CAPTCHA_GT || "";
+const challenge = process.env.CAPTCHA_CHALLENGE || "";
 const pageurl = process.env.CAPTCHA_PAGEURL || "";
 const POLL_INTERVAL = parseInt(process.env.POLL_INTERVAL || "5", 10);
 const MAX_TIMEOUT = parseInt(process.env.MAX_TIMEOUT || "120", 10);
@@ -38,16 +39,14 @@ function validateConfig() {
 }
 
 async function submitTask() {
-  console.log("[*] Submitting reCAPTCHA v3 task...");
+  console.log("[*] Submitting GeeTest v3 task...");
 
   const params = {
     key: API_KEY,
-    method: "userrecaptcha",
-    googlekey,
+    method: "geetest",
+    gt,
+    challenge,
     pageurl,
-    version: "v3",
-    action: "verify",
-    min_score: "0.3",
     json: "1",
   };
 

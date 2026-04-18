@@ -1,4 +1,4 @@
-# Solve reCAPTCHA v3 using the CaptchaAI API.
+# Solve reCAPTCHA v2 using the CaptchaAI API.
 #
 # Usage:
 #   ruby solve.rb
@@ -75,16 +75,13 @@ if API_KEY.empty? || API_KEY == "YOUR_API_KEY"
 end
 
 # Submit
-puts "[*] Submitting reCAPTCHA v3 task..."
+puts "[*] Submitting reCAPTCHA v2 task..."
 submit_uri = URI.parse(SUBMIT_URL)
 submit_uri.query = URI.encode_www_form(
   key: API_KEY,
   method: "userrecaptcha",
   googlekey: GOOGLEKEY,
   pageurl: PAGEURL,
-  version: "v3",
-  action: "verify",
-  min_score: "0.3",
   json: "1"
 )
 

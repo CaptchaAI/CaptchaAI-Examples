@@ -1,5 +1,5 @@
 /**
- * Solve reCAPTCHA v3 using the CaptchaAI API.
+ * Solve GeeTest v3 using the CaptchaAI API.
  *
  * Usage:
  *   kotlinc solve.kt -include-runtime -d solve.jar
@@ -82,7 +82,8 @@ fun classifyError(error: String) {
 fun main() {
     val env = loadEnv("../.env")
     val apiKey = getEnv(env, "CAPTCHAAI_API_KEY")
-    val googlekey = getEnv(env, "CAPTCHA_GOOGLEKEY")
+    val gt = getEnv(env, "CAPTCHA_GT")
+    val challenge = getEnv(env, "CAPTCHA_CHALLENGE")
     val pageurl = getEnv(env, "CAPTCHA_PAGEURL")
     val pollInterval = getEnv(env, "POLL_INTERVAL", "5").toInt()
     val maxTimeout = getEnv(env, "MAX_TIMEOUT", "120").toInt()
@@ -93,9 +94,9 @@ fun main() {
         exitProcess(1)
     }
     // Submit
-    println("[*] Submitting reCAPTCHA v3 task...")
+    println("[*] Submitting GeeTest v3 task...")
     val enc = java.nio.charset.StandardCharsets.UTF_8.name()
-    val submitParams = "key=${URLEncoder.encode(apiKey, enc)}&method=userrecaptcha&googlekey=${URLEncoder.encode(googlekey, enc)}&pageurl=${URLEncoder.encode(pageurl, enc)}&version=v3&action=verify&min_score=0.3&json=1"
+    val submitParams = "key=${URLEncoder.encode(apiKey, enc)}&method=geetest&gt=${URLEncoder.encode(gt, enc)}&challenge=${URLEncoder.encode(challenge, enc)}&pageurl=${URLEncoder.encode(pageurl, enc)}&json=1"
 
     val submitBody: String
     try { submitBody = httpGet("$SUBMIT_URL?$submitParams") }
