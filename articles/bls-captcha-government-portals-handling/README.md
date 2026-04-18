@@ -1,4 +1,4 @@
-# BLS CAPTCHA in Government Portals: Handling Strategies
+﻿# BLS CAPTCHA in Government Portals: Handling Strategies
 
 Full working example for solving BLS CAPTCHA using the CaptchaAI API.
 
@@ -81,9 +81,9 @@ cd bash && chmod +x solve.sh && ./solve.sh
 
 ## How it works
 
-1. **Submit** â€” Sends the CAPTCHA parameters to `https://ocr.captchaai.com/in.php` using method `bls`
-2. **Poll** â€” Checks `https://ocr.captchaai.com/res.php` every 5 seconds for the result
-3. **Result** â€” Returns the solved token/answer ready for use
+1. **Submit** — Sends the CAPTCHA parameters to `https://ocr.captchaai.com/in.php` using method `bls`
+2. **Poll** — Checks `https://ocr.captchaai.com/res.php` every 5 seconds for the result
+3. **Result** — Returns the solved token/answer ready for use
 
 ## API documentation
 

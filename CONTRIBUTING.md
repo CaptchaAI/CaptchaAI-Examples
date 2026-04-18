@@ -4,6 +4,43 @@
 
 This repository holds full working code examples that accompany [CaptchaAI blog articles](https://blog.captchaai.com). Each example is a complete, runnable project — not a snippet.
 
+## Support tiers
+
+Every example pack is classified into a support tier:
+
+| Tier | Badge | Criteria |
+|------|-------|----------|
+| **Verified** | 🟢 | All 10 languages CI-linted, solver-correct, manually reviewed |
+| **Standard** | 🟡 | All 10 languages present, scaffolded from verified templates, basic validation passes |
+| **Generated** | ⚪ | Scaffolded from template, may have known issues pending review |
+
+### Promotion path
+
+```
+Generated → Standard → Verified
+```
+
+**Generated → Standard:** Fix any null labels, fix mojibake, ensure blog backlink, pass CI.
+
+**Standard → Verified:** All 10 languages CI-linted, solver correctness validated (method + response field + params), manual code review completed.
+
+### CI-validated languages
+
+The following languages are checked in CI:
+
+| Language | CI Check | Status |
+|----------|----------|--------|
+| Python | `ruff` (syntax + style) | Enforced |
+| Node.js | `acorn` (ECMAScript 2020) | Enforced |
+| PHP | `php -l` (syntax) | Enforced |
+| Go | `go vet` / `gofmt` | Enforced |
+| Ruby | `ruby -c` (syntax) | Enforced |
+| Bash | `bash -n` + `shellcheck` | Enforced |
+| Java | `javac` (compilation) | Enforced |
+| Kotlin | `kotlinc` (syntax) | Best-effort |
+| C# | — | Planned |
+| Rust | — | Planned |
+
 ## When to add an example
 
 An example pack should be created when:

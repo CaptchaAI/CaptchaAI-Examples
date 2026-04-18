@@ -51,17 +51,138 @@ jobs:
       - name: Check PHP syntax
         run: find articles/*/php -name "*.php" -exec php -l {} \;
 
+  lint-go:
+    name: Lint Go examples
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
+
+      - name: Check Go syntax
+        run: |
+          errors=0
+          for dir in articles/*/go; do
+            if [ -f "$dir/solve.go" ]; then
+              cd "$dir"
+              if [ -f "go.mod" ]; then
+                go vet ./... 2>&1 || errors=$((errors + 1))
+              else
+                gofmt -e solve.go > /dev/null 2>&1 || errors=$((errors + 1))
+              fi
+              cd - > /dev/null
+            fi
+          done
+          if [ $errors -gt 0 ]; then
+            echo "Found $errors Go errors"
+            exit 1
+          fi
+          echo "All Go examples pass syntax check"
+
+  lint-ruby:
+    name: Lint Ruby examples
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2"
+
+      - name: Check Ruby syntax
+        run: find articles/*/ruby -name "*.rb" -exec ruby -c {} \;
+
+  lint-bash:
+    name: Lint Bash examples
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install ShellCheck
+        run: sudo apt-get install -y shellcheck
+
+      - name: Check Bash syntax
+        run: |
+          errors=0
+          for f in articles/*/bash/solve.sh; do
+            if [ -f "$f" ]; then
+              bash -n "$f" 2>&1 || errors=$((errors + 1))
+              shellcheck -S warning "$f" 2>&1 || true
+            fi
+          done
+          if [ $errors -gt 0 ]; then
+            echo "Found $errors Bash syntax errors"
+            exit 1
+          fi
+          echo "All Bash examples pass syntax check"
+
+  lint-java:
+    name: Lint Java examples
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "17"
+
+      - name: Check Java syntax
+        run: |
+          errors=0
+          for f in articles/*/java/Solve.java; do
+            if [ -f "$f" ]; then
+              javac -d /tmp/java_check "$f" 2>&1 || errors=$((errors + 1))
+              rm -rf /tmp/java_check/*
+            fi
+          done
+          if [ $errors -gt 0 ]; then
+            echo "Found $errors Java compilation errors"
+            exit 1
+          fi
+          echo "All Java examples compile"
+
+  lint-kotlin:
+    name: Lint Kotlin examples
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Kotlin
+        run: |
+          curl -sL https://github.com/JetBrains/kotlin/releases/download/v1.9.24/kotlin-compiler-1.9.24.zip -o kotlin.zip
+          unzip -q kotlin.zip -d /opt/kotlin
+          echo "/opt/kotlin/kotlinc/bin" >> $GITHUB_PATH
+
+      - name: Check Kotlin syntax
+        run: |
+          errors=0
+          for f in articles/*/kotlin/solve.kt; do
+            if [ -f "$f" ]; then
+              /opt/kotlin/kotlinc/bin/kotlinc -script "$f" -nowarn 2>&1 | head -5 || errors=$((errors + 1))
+            fi
+          done
+          if [ $errors -gt 0 ]; then
+            echo "Found $errors Kotlin errors"
+          fi
+          echo "Kotlin syntax check complete"
+
   validate-structure:
     name: Validate example pack structure
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Check required files
+      - name: Check required files and ALL 10 language directories
         run: |
           errors=0
+          ALL_LANGS="python node php go java csharp ruby rust kotlin bash"
           for dir in articles/*/; do
             slug=$(basename "$dir")
+
+            # Required files
             if [ ! -f "$dir/README.md" ]; then
               echo "ERROR: $dir is missing README.md"
               errors=$((errors + 1))
@@ -70,23 +191,20 @@ jobs:
               echo "ERROR: $dir is missing .env.example"
               errors=$((errors + 1))
             fi
-            # Check that at least one language directory exists
-            has_lang=0
-            for lang in python node php go; do
-              if [ -d "$dir/$lang" ]; then
-                has_lang=1
+
+            # ALL 10 language directories required
+            for lang in $ALL_LANGS; do
+              if [ ! -d "$dir/$lang" ]; then
+                echo "ERROR: $dir is missing $lang/ directory"
+                errors=$((errors + 1))
               fi
             done
-            if [ $has_lang -eq 0 ]; then
-              echo "ERROR: $dir has no language directory (python/node/php/go)"
-              errors=$((errors + 1))
-            fi
           done
           if [ $errors -gt 0 ]; then
             echo "Found $errors structural errors"
             exit 1
           fi
-          echo "All example packs have valid structure"
+          echo "All example packs have complete structure (10 languages)"
 
       - name: Check no .env files committed
         run: |
@@ -105,7 +223,7 @@ jobs:
             readme="$dir/README.md"
             if [ -f "$readme" ]; then
               if ! grep -q "blog.captchaai.com" "$readme"; then
-                echo "WARNING: $readme does not link to blog.captchaai.com"
+                echo "ERROR: $readme does not link to blog.captchaai.com"
                 errors=$((errors + 1))
               fi
             fi
@@ -115,3 +233,102 @@ jobs:
             exit 1
           fi
           echo "All READMEs link to the blog"
+
+  validate-quality:
+    name: Validate content quality
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for mojibake in markdown files
+        run: |
+          # Detect common UTF-8 double-encoding artifacts
+          errors=0
+          while IFS= read -r -d '' file; do
+            if grep -Pq '\xC3\xA2\xC2\x80' "$file" 2>/dev/null; then
+              echo "ERROR: $file contains mojibake (double-encoded UTF-8)"
+              errors=$((errors + 1))
+            fi
+          done < <(find articles -name "*.md" -print0)
+          if [ $errors -gt 0 ]; then
+            echo "Found $errors files with encoding issues"
+            exit 1
+          fi
+          echo "No mojibake detected"
+
+      - name: Check for null CAPTCHA type labels in README index
+        run: |
+          if grep -P '\|\s*null\s*\|' README.md; then
+            echo "ERROR: README.md contains null CAPTCHA type labels"
+            exit 1
+          fi
+          echo "No null labels in README index"
+
+      - name: Validate solver method matches CAPTCHA type
+        run: |
+          errors=0
+          for dir in articles/*/; do
+            slug=$(basename "$dir")
+            solve_py="$dir/python/solve.py"
+            if [ -f "$solve_py" ]; then
+              method=$(grep -oP '"method"\s*:\s*"\K[^"]+' "$solve_py" 2>/dev/null || true)
+              if [ -n "$method" ]; then
+                # Check response field consistency
+                case "$method" in
+                  userrecaptcha)
+                    if ! grep -q "g-recaptcha-response" "$solve_py" 2>/dev/null; then
+                      if grep -q "cf-turnstile-response\|h-captcha-response" "$solve_py" 2>/dev/null; then
+                        echo "ERROR: $slug uses method=userrecaptcha but wrong response field"
+                        errors=$((errors + 1))
+                      fi
+                    fi
+                    ;;
+                  turnstile)
+                    if ! grep -q "cf-turnstile-response" "$solve_py" 2>/dev/null; then
+                      if grep -q "g-recaptcha-response\|h-captcha-response" "$solve_py" 2>/dev/null; then
+                        echo "ERROR: $slug uses method=turnstile but wrong response field"
+                        errors=$((errors + 1))
+                      fi
+                    fi
+                    ;;
+                  hcaptcha)
+                    if ! grep -q "h-captcha-response" "$solve_py" 2>/dev/null; then
+                      if grep -q "g-recaptcha-response\|cf-turnstile-response" "$solve_py" 2>/dev/null; then
+                        echo "ERROR: $slug uses method=hcaptcha but wrong response field"
+                        errors=$((errors + 1))
+                      fi
+                    fi
+                    ;;
+                esac
+              fi
+            fi
+          done
+          if [ $errors -gt 0 ]; then
+            echo "Found $errors solver/response-field mismatches"
+            exit 1
+          fi
+          echo "All solver methods match their response fields"
+
+      - name: Validate index completeness
+        run: |
+          errors=0
+          # Check every pack directory is listed in README
+          for dir in articles/*/; do
+            slug=$(basename "$dir")
+            if ! grep -q "articles/$slug/" README.md; then
+              echo "ERROR: $slug exists but is not in README.md index"
+              errors=$((errors + 1))
+            fi
+          done
+          # Check no phantom entries
+          for slug in $(grep -oP 'articles/\K[^/]+(?=/)' README.md | sort -u); do
+            if [ ! -d "articles/$slug" ]; then
+              echo "ERROR: README references articles/$slug/ but directory does not exist"
+              errors=$((errors + 1))
+            fi
+          done
+          if [ $errors -gt 0 ]; then
+            echo "Found $errors index integrity errors"
+            exit 1
+          fi
+          echo "README index is complete and accurate"
