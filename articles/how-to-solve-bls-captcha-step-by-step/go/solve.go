@@ -50,12 +50,68 @@ func requestValue(value any) string {
 	}
 }
 
-func getRequestString(raw json.RawMessage) string {
-	var s string
-	if err := json.Unmarshal(raw, &s); err == nil {
-		return s
+func getRequestString(raw any) string {
+	switch v := raw.(type) {
+	case nil:
+		return ""
+	case string:
+		return v
+	case float64:
+		return strconv.FormatInt(int64(v), 10)
+	case json.Number:
+		return v.String()
+	case map[string]any:
+		data, err := json.Marshal(v)
+		if err == nil {
+			return string(data)
+		}
+	case []any:
+		data, err := json.Marshal(v)
+		if err == nil {
+			return string(data)
+		}
+	case json.RawMessage:
+		var s string
+		if err := json.Unmarshal(v, &s); err == nil {
+			return s
+		}
+		return string(v)
 	}
-	return string(raw)
+	return fmt.Sprintf("%v", raw)
+}
+
+func loadEnv() map[string]string {
+	path := filepath.Join("..", ".env")
+	env := make(map[string]string)
+	f, err := os.Open(path)
+	if err != nil {
+		return env
+	}
+	defer f.Close()
+
+	scanner := bufio.NewScanner(f)
+	for scanner.Scan() {
+		line := strings.TrimSpace(scanner.Text())
+		if line == "" || strings.HasPrefix(line, "#") {
+			continue
+		}
+		parts := strings.SplitN(line, "=", 2)
+		if len(parts) == 2 {
+			env[strings.TrimSpace(parts[0])] = strings.TrimSpace(parts[1])
+		}
+	}
+
+	return env
+}
+
+func getEnv(env map[string]string, key, fallback string) string {
+	if value, ok := env[key]; ok && value != "" {
+		return value
+	}
+	if value := os.Getenv(key); value != "" {
+		return value
+	}
+	return fallback
 }
 
 func handleError(error string) {

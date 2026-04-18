@@ -49,6 +49,40 @@ func requestValue(value any) string {
 	}
 }
 
+func loadEnv() map[string]string {
+	path := filepath.Join("..", ".env")
+	env := make(map[string]string)
+	f, err := os.Open(path)
+	if err != nil {
+		return env
+	}
+	defer f.Close()
+
+	scanner := bufio.NewScanner(f)
+	for scanner.Scan() {
+		line := strings.TrimSpace(scanner.Text())
+		if line == "" || strings.HasPrefix(line, "#") {
+			continue
+		}
+		parts := strings.SplitN(line, "=", 2)
+		if len(parts) == 2 {
+			env[strings.TrimSpace(parts[0])] = strings.TrimSpace(parts[1])
+		}
+	}
+
+	return env
+}
+
+func getEnv(env map[string]string, key, fallback string) string {
+	if value, ok := env[key]; ok && value != "" {
+		return value
+	}
+	if value := os.Getenv(key); value != "" {
+		return value
+	}
+	return fallback
+}
+
 func main() {
 	env := loadEnv()
 	apiKey := getEnv(env, "CAPTCHAAI_API_KEY", "")
@@ -96,11 +130,11 @@ func main() {
 	json.Unmarshal(body, &submitResp)
 
 	if submitResp.Status != 1 {
-		handleError(submitResp.Request)
+		handleError(requestValue(submitResp.Request))
 		os.Exit(1)
 	}
 
-	taskID := submitResp.Request
+	taskID := requestValue(submitResp.Request)
 	fmt.Printf("[+] Task submitted. ID: %s\n", taskID)
 
 	// Poll for result
@@ -137,9 +171,10 @@ func main() {
 		resp.Body.Close()
 		var result apiResponse
 		json.Unmarshal(body, &result)
+		reqStr := requestValue(result.Request)
 
 		if result.Status == 1 {
-			token := result.Request
+			token := reqStr
 			display := token
 			if len(display) > 50 {
 				display = display[:50]
@@ -152,7 +187,7 @@ func main() {
 			return
 		}
 
-		if result.Request == "CAPCHA_NOT_READY" {
+		if reqStr == "CAPCHA_NOT_READY" {
 			fmt.Printf("[*] Not ready yet, waiting %ds...\n", pollInterval)
 			time.Sleep(time.Duration(pollInterval) * time.Second)
 			elapsed += pollInterval
@@ -160,8 +195,8 @@ func main() {
 			continue
 		}
 
-		if transientErrors[result.Request] {
-			fmt.Printf("[!] Transient error: %s, retrying in %ds...\n", result.Request, backoff)
+		if transientErrors[reqStr] {
+			fmt.Printf("[!] Transient error: %s, retrying in %ds...\n", reqStr, backoff)
 			time.Sleep(time.Duration(backoff) * time.Second)
 			elapsed += backoff
 			if backoff < 30 {
@@ -170,13 +205,13 @@ func main() {
 			continue
 		}
 
-		if solveErrors[result.Request] {
-			fmt.Printf("[!] Solve error: %s\n", result.Request)
+		if solveErrors[reqStr] {
+			fmt.Printf("[!] Solve error: %s\n", reqStr)
 			fmt.Println("    The CAPTCHA could not be solved. Verify parameters and retry.")
 			os.Exit(1)
 		}
 
-		fmt.Printf("[!] Unexpected error: %s\n", result.Request)
+		fmt.Printf("[!] Unexpected error: %s\n", reqStr)
 		os.Exit(1)
 	}
 
