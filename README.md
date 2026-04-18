@@ -2,7 +2,7 @@
 
 Public code examples for the [CaptchaAI](https://captchaai.com) CAPTCHA solving API.
 
-This repository is published for clients who want a runnable starting point fast. Each pack links back to a blog article, includes setup instructions, and shows the current support level honestly.
+This repository is published for clients who want a runnable starting point fast. Each pack includes setup instructions, shows the current support level honestly, and links back to the companion blog article once that article is live or scheduled for imminent publication.
 
 For maintainers, start with `ONBOARDING.md` before changing repo-level messaging or pack contracts.
 

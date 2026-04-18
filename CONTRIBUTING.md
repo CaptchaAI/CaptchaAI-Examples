@@ -37,11 +37,13 @@ The public quality bar focuses on usefulness and honesty:
 
 - Correct CaptchaAI API endpoints and parameter usage
 - Clear setup instructions and environment configuration
-- A working blog backlink for context
+- A canonical blog backlink for context when the article is live or scheduled for imminent publication, or an explicit pending-publication note when it is not
 - Lint or compile checks where toolchains are available
 - Deeper runtime or smoke validation on selected reference flows
 
 The private owner repo also regenerates the root README index, checks cross-repo metadata truth, and validates support-tier claims before treating the public repo as healthy.
+
+Do not point users at missing or unknown `blog.captchaai.com` URLs from this public repo. Scheduled canonical links are acceptable when publication is imminent.
 
 ## External contributions
 

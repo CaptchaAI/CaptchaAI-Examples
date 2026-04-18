@@ -7,7 +7,7 @@ If you are onboarding, start here before editing pack content or changing repo-l
 ## What this repo is for
 
 - publish client-facing runnable example packs
-- help readers move from a blog article to working CaptchaAI code fast
+- help readers move from a live blog article to working CaptchaAI code fast
 - state support levels honestly
 - give clients a stable pack-level contract through `articles/{slug}/README.md`
 
@@ -44,7 +44,7 @@ Do not treat internal generation history as part of the public contract.
 | Public surface | Private source or owner |
 |---|---|
 | `articles/{slug}/` | article slug and example metadata in `cai_content` |
-| Pack README backlink | blog article at `https://blog.captchaai.com/{slug}` |
+| Pack README backlink | canonical blog article at `https://blog.captchaai.com/{slug}` when the article is live or scheduled for imminent publication |
 | Root README index | generated from private manifests and validation |
 | Support tier | private example-factory validation and reporting |
 
@@ -82,6 +82,7 @@ The private factory also checks:
 3. Do not hand-edit the generated root README index unless you are intentionally repairing it and regenerating immediately after.
 4. Keep pack README setup steps aligned with the actual files in that pack.
 5. If a language is listed, that implementation should exist and be usable as documented.
+6. Scheduled articles that are about to publish may keep the canonical blog backlink, but missing or unknown blog targets should still use a pending-publication note.
 
 ## Start-here order
 
