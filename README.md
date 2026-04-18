@@ -4,6 +4,8 @@ Public code examples for the [CaptchaAI](https://captchaai.com) CAPTCHA solving 
 
 This repository is published for clients who want a runnable starting point fast. Each pack links back to a blog article, includes setup instructions, and shows the current support level honestly.
 
+For maintainers, start with `ONBOARDING.md` before changing repo-level messaging or pack contracts.
+
 ## Quick start
 
 1. Get your API key from [captchaai.com](https://captchaai.com)
@@ -21,6 +23,8 @@ This repository is published for clients who want a runnable starting point fast
 - Public companion to the CaptchaAI blog at `blog.captchaai.com`.
 - A practical reference library, not a public window into CaptchaAI's internal content factory.
 - Published example packs only. Internal templates, tools, scaffolding, repair tooling, and validation automation are intentionally kept in the private factory repo.
+
+The public repo contract is the pack directory plus the pack README, not the private workflow that produced it.
 
 ## Support levels
 

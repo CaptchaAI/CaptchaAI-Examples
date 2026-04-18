@@ -4,6 +4,8 @@ This repository is maintained internally and published so CaptchaAI clients can 
 
 The public contract here is simple: each pack under `articles/{slug}/` is a client-facing example, and the README inside that pack is the setup and usage guide clients should follow.
 
+If you are onboarding to this repo, read `ONBOARDING.md` first.
+
 ## Public vs private
 
 - Public: blog articles on `blog.captchaai.com` and the example packs in this repository.
@@ -38,6 +40,8 @@ The public quality bar focuses on usefulness and honesty:
 - A working blog backlink for context
 - Lint or compile checks where toolchains are available
 - Deeper runtime or smoke validation on selected reference flows
+
+The private owner repo also regenerates the root README index, checks cross-repo metadata truth, and validates support-tier claims before treating the public repo as healthy.
 
 ## External contributions
 
