@@ -72,6 +72,7 @@ fn main() {
     }
 
     // Submit
+    println!("[*] Submitting Grid Image CAPTCHA task...");
     let submit_url = format!(
         "https://ocr.captchaai.com/in.php?key={}&method=base64&body={}&recaptcha=1&json=1",
         urlencoding::encode(&api_key), urlencoding::encode(&body)

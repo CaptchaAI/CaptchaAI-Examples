@@ -74,6 +74,7 @@ fn main() {
     }
 
     // Submit
+    println!("[*] Submitting GeeTest v3 task...");
     let submit_url = format!(
         "https://ocr.captchaai.com/in.php?key={}&method=geetest&gt={}&challenge={}&pageurl={}&json=1",
         urlencoding::encode(&api_key), urlencoding::encode(&gt), urlencoding::encode(&challenge), urlencoding::encode(&pageurl)

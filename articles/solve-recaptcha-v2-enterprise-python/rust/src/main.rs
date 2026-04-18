@@ -73,6 +73,7 @@ fn main() {
     }
 
     // Submit
+    println!("[*] Submitting reCAPTCHA v2 Enterprise task...");
     let submit_url = format!(
         "https://ocr.captchaai.com/in.php?key={}&method=userrecaptcha&googlekey={}&pageurl={}&enterprise=1&json=1",
         urlencoding::encode(&api_key), urlencoding::encode(&googlekey), urlencoding::encode(&pageurl)

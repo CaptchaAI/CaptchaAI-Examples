@@ -72,6 +72,7 @@ fn main() {
     }
 
     // Submit
+    println!("[*] Submitting Image/OCR CAPTCHA task...");
     let submit_url = format!(
         "https://ocr.captchaai.com/in.php?key={}&method=base64&body={}&json=1",
         urlencoding::encode(&api_key), urlencoding::encode(&body)

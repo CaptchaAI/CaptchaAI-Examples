@@ -73,6 +73,7 @@ fn main() {
     }
 
     // Submit
+    println!("[*] Submitting Cloudflare Turnstile task...");
     let submit_url = format!(
         "https://ocr.captchaai.com/in.php?key={}&method=turnstile&sitekey={}&pageurl={}&json=1",
         urlencoding::encode(&api_key), urlencoding::encode(&sitekey), urlencoding::encode(&pageurl)

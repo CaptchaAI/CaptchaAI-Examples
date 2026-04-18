@@ -72,6 +72,7 @@ fn main() {
     }
 
     // Submit
+    println!("[*] Submitting BLS CAPTCHA task...");
     let submit_url = format!(
         "https://ocr.captchaai.com/in.php?key={}&method=bls&body={}&json=1",
         urlencoding::encode(&api_key), urlencoding::encode(&body)

@@ -91,8 +91,7 @@ fun main() {
         println("    Copy .env.example to .env and add your real API key.")
         exitProcess(1)
     }
-
-    // Submit — TODO: Change method and add CAPTCHA-specific parameters
+    // Submit
     println("[*] Submitting BLS CAPTCHA task...")
     val enc = java.nio.charset.StandardCharsets.UTF_8.name()
     val submitParams = "key=${URLEncoder.encode(apiKey, enc)}&method=bls&body=${URLEncoder.encode(body, enc)}&json=1"

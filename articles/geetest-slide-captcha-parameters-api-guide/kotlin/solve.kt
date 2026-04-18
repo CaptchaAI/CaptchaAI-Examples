@@ -93,8 +93,7 @@ fun main() {
         println("    Copy .env.example to .env and add your real API key.")
         exitProcess(1)
     }
-
-    // Submit — TODO: Change method and add CAPTCHA-specific parameters
+    // Submit
     println("[*] Submitting GeeTest v3 task...")
     val enc = java.nio.charset.StandardCharsets.UTF_8.name()
     val submitParams = "key=${URLEncoder.encode(apiKey, enc)}&method=geetest&gt=${URLEncoder.encode(gt, enc)}&challenge=${URLEncoder.encode(challenge, enc)}&pageurl=${URLEncoder.encode(pageurl, enc)}&json=1"
