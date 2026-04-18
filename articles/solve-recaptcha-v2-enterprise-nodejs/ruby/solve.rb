@@ -44,7 +44,7 @@ end
 env = load_env(File.join(__dir__, "..", ".env"))
 
 API_KEY = get_env(env, "CAPTCHAAI_API_KEY")
-GOOGLEKEY = get_env(env, "CAPTCHA_GOOGLEKEY")
+GOOGLEKEY = get_env(env, "CAPTCHA_SITEKEY")
 PAGEURL = get_env(env, "CAPTCHA_PAGEURL")
 POLL_INTERVAL = get_env(env, "POLL_INTERVAL", "5").to_i
 MAX_TIMEOUT = get_env(env, "MAX_TIMEOUT", "120").to_i

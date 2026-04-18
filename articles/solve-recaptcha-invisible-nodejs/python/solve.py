@@ -20,7 +20,7 @@ SUBMIT_URL = "https://ocr.captchaai.com/in.php"
 RESULT_URL = "https://ocr.captchaai.com/res.php"
 
 API_KEY = os.getenv("CAPTCHAAI_API_KEY", "")
-CAPTCHA_GOOGLEKEY = os.getenv("CAPTCHA_GOOGLEKEY", "")
+CAPTCHA_SITEKEY = os.getenv("CAPTCHA_SITEKEY", "")
 CAPTCHA_PAGEURL = os.getenv("CAPTCHA_PAGEURL", "")
 POLL_INTERVAL = int(os.getenv("POLL_INTERVAL", "5"))
 MAX_TIMEOUT = int(os.getenv("MAX_TIMEOUT", "120"))
@@ -46,7 +46,7 @@ def submit_task() -> str:
     payload = {
         "key": API_KEY,
         "method": "userrecaptcha",
-        "googlekey": CAPTCHA_GOOGLEKEY,
+        "googlekey": CAPTCHA_SITEKEY,
         "pageurl": CAPTCHA_PAGEURL,
         "invisible": "1",
         "json": "1",

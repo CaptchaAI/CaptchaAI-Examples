@@ -38,7 +38,7 @@ public class Solve {
 
     public Solve(Map<String, String> env) {
         this.apiKey = env.getOrDefault("CAPTCHAAI_API_KEY", "");
-        this.googlekey = env.getOrDefault("CAPTCHA_GOOGLEKEY", "");
+        this.googlekey = env.getOrDefault("CAPTCHA_SITEKEY", "");
         this.pageurl = env.getOrDefault("CAPTCHA_PAGEURL", "");
         this.pollInterval = Integer.parseInt(env.getOrDefault("POLL_INTERVAL", "5"));
         this.maxTimeout = Integer.parseInt(env.getOrDefault("MAX_TIMEOUT", "120"));
@@ -215,6 +215,11 @@ public class Solve {
                 if (parts.length == 2) env.put(parts[0].trim(), parts[1].trim());
             }
         } catch (IOException e) { /* fall back to system env */ }
+        for (Map.Entry<String, String> entry : System.getenv().entrySet()) {
+            if (entry.getValue() != null && !entry.getValue().isEmpty()) {
+                env.putIfAbsent(entry.getKey(), entry.getValue());
+            }
+        }
         return env;
     }
 

@@ -14,7 +14,7 @@ const SUBMIT_URL = "https://ocr.captchaai.com/in.php";
 const RESULT_URL = "https://ocr.captchaai.com/res.php";
 
 const API_KEY = process.env.CAPTCHAAI_API_KEY || "";
-const googlekey = process.env.CAPTCHA_GOOGLEKEY || "";
+const googlekey = process.env.CAPTCHA_SITEKEY || "";
 const pageurl = process.env.CAPTCHA_PAGEURL || "";
 const POLL_INTERVAL = parseInt(process.env.POLL_INTERVAL || "5", 10);
 const MAX_TIMEOUT = parseInt(process.env.MAX_TIMEOUT || "120", 10);

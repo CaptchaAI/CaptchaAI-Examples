@@ -248,6 +248,11 @@ public class Solve {
         } catch (IOException e) {
             // .env not found, fall back to system env
         }
+        for (Map.Entry<String, String> entry : System.getenv().entrySet()) {
+            if (entry.getValue() != null && !entry.getValue().isEmpty()) {
+                env.putIfAbsent(entry.getKey(), entry.getValue());
+            }
+        }
         return env;
     }
 

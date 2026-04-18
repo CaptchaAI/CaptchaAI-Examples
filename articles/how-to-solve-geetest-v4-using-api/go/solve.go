@@ -30,51 +30,23 @@ var solveErrors = map[string]bool{"ERROR_CAPTCHA_UNSOLVABLE": true}
 var proxyErrors = map[string]bool{"ERROR_BAD_PROXY": true, "ERROR_PROXY_CONNECTION_FAILED": true}
 
 type apiResponse struct {
-	Status  int             `json:"status"`
-	Request json.RawMessage `json:"request"`
+	Status  int `json:"status"`
+	Request any `json:"request"`
 }
 
-type geetestV4Solution struct {
-	CaptchaID     string `json:"captcha_id"`
-	LotNumber     string `json:"lot_number"`
-	PassToken     string `json:"pass_token"`
-	GenTime       string `json:"gen_time"`
-	CaptchaOutput string `json:"captcha_output"`
-}
-
-func loadEnv() map[string]string {
-	env := make(map[string]string)
-	envPath := filepath.Join(filepath.Dir(os.Args[0]), "..", ".env")
-	if _, err := os.Stat(envPath); err != nil {
-		envPath = filepath.Join("..", ".env")
-	}
-	f, err := os.Open(envPath)
-	if err != nil {
-		return env
-	}
-	defer f.Close()
-	scanner := bufio.NewScanner(f)
-	for scanner.Scan() {
-		line := strings.TrimSpace(scanner.Text())
-		if line == "" || strings.HasPrefix(line, "#") {
-			continue
-		}
-		parts := strings.SplitN(line, "=", 2)
-		if len(parts) == 2 {
-			env[strings.TrimSpace(parts[0])] = strings.TrimSpace(parts[1])
-		}
-	}
-	return env
-}
-
-func getEnv(env map[string]string, key, fallback string) string {
-	if v, ok := env[key]; ok && v != "" {
+func requestValue(value any) string {
+	switch v := value.(type) {
+	case nil:
+		return ""
+	case string:
 		return v
+	case float64:
+		return strconv.FormatInt(int64(v), 10)
+	case json.Number:
+		return v.String()
+	default:
+		return fmt.Sprintf("%v", v)
 	}
-	if v := os.Getenv(key); v != "" {
-		return v
-	}
-	return fallback
 }
 
 func handleError(error string) {

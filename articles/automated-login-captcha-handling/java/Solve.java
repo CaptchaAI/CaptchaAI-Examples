@@ -215,6 +215,11 @@ public class Solve {
                 if (parts.length == 2) env.put(parts[0].trim(), parts[1].trim());
             }
         } catch (IOException e) { /* fall back to system env */ }
+        for (Map.Entry<String, String> entry : System.getenv().entrySet()) {
+            if (entry.getValue() != null && !entry.getValue().isEmpty()) {
+                env.putIfAbsent(entry.getKey(), entry.getValue());
+            }
+        }
         return env;
     }
 

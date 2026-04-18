@@ -42,7 +42,7 @@ class Solve
     public Solve(Dictionary<string, string> env)
     {
         _apiKey = GetEnv(env, "CAPTCHAAI_API_KEY", "");
-        _googlekey = GetEnv(env, "CAPTCHA_GOOGLEKEY", "");
+        _googlekey = GetEnv(env, "CAPTCHA_SITEKEY", "");
         _pageurl = GetEnv(env, "CAPTCHA_PAGEURL", "");
         _pollInterval = int.Parse(GetEnv(env, "POLL_INTERVAL", "5"));
         _maxTimeout = int.Parse(GetEnv(env, "MAX_TIMEOUT", "120"));

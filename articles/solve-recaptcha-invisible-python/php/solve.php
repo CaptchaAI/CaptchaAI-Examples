@@ -17,7 +17,7 @@ define('SUBMIT_URL', 'https://ocr.captchaai.com/in.php');
 define('RESULT_URL', 'https://ocr.captchaai.com/res.php');
 
 $apiKey = $_ENV['CAPTCHAAI_API_KEY'] ?? '';
-$googlekey = $_ENV['CAPTCHA_GOOGLEKEY'] ?? '';
+$googlekey = $_ENV['CAPTCHA_SITEKEY'] ?? '';
 $pageurl = $_ENV['CAPTCHA_PAGEURL'] ?? '';
 $pollInterval = (int)($_ENV['POLL_INTERVAL'] ?? 5);
 $maxTimeout = (int)($_ENV['MAX_TIMEOUT'] ?? 120);

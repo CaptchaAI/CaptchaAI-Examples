@@ -27,7 +27,7 @@ if [[ -f "$ENV_FILE" ]]; then
 fi
 
 CAPTCHAAI_API_KEY="${CAPTCHAAI_API_KEY:-}"
-CAPTCHA_GOOGLEKEY="${CAPTCHA_GOOGLEKEY:-}"
+CAPTCHA_SITEKEY="${CAPTCHA_SITEKEY:-}"
 CAPTCHA_PAGEURL="${CAPTCHA_PAGEURL:-}"
 POLL_INTERVAL="${POLL_INTERVAL:-5}"
 MAX_TIMEOUT="${MAX_TIMEOUT:-120}"
@@ -77,7 +77,7 @@ fi
 # Submit
 echo "[*] Submitting reCAPTCHA v2 task..."
 SUBMIT_RESPONSE=$(curl -s --max-time 30 \
-    "${SUBMIT_URL}?key=${CAPTCHAAI_API_KEY}&method=userrecaptcha&googlekey=${CAPTCHA_GOOGLEKEY}&pageurl=${CAPTCHA_PAGEURL}&json=1")
+    "${SUBMIT_URL}?key=${CAPTCHAAI_API_KEY}&method=userrecaptcha&googlekey=${CAPTCHA_SITEKEY}&pageurl=${CAPTCHA_PAGEURL}&json=1")
 
 if [[ -z "$SUBMIT_RESPONSE" ]]; then
     echo "[!] Network error during submission."

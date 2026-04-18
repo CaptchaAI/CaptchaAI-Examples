@@ -82,7 +82,7 @@ fun classifyError(error: String) {
 fun main() {
     val env = loadEnv("../.env")
     val apiKey = getEnv(env, "CAPTCHAAI_API_KEY")
-    val googlekey = getEnv(env, "CAPTCHA_GOOGLEKEY")
+    val googlekey = getEnv(env, "CAPTCHA_SITEKEY")
     val pageurl = getEnv(env, "CAPTCHA_PAGEURL")
     val pollInterval = getEnv(env, "POLL_INTERVAL", "5").toInt()
     val maxTimeout = getEnv(env, "MAX_TIMEOUT", "120").toInt()

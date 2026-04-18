@@ -54,7 +54,7 @@ fn main() {
     let env = load_env("../.env");
 
     let api_key = get_env(&env, "CAPTCHAAI_API_KEY", "");
-    let googlekey = get_env(&env, "CAPTCHA_GOOGLEKEY", "");
+    let googlekey = get_env(&env, "CAPTCHA_SITEKEY", "");
     let pageurl = get_env(&env, "CAPTCHA_PAGEURL", "");
     let poll_interval: u64 = get_env(&env, "POLL_INTERVAL", "5").parse().unwrap_or(5);
     let max_timeout: u64 = get_env(&env, "MAX_TIMEOUT", "120").parse().unwrap_or(120);

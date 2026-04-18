@@ -36,8 +36,23 @@ var (
 )
 
 type apiResponse struct {
-	Status  int    `json:"status"`
-	Request string `json:"request"`
+	Status  int `json:"status"`
+	Request any `json:"request"`
+}
+
+func requestValue(value any) string {
+	switch v := value.(type) {
+	case nil:
+		return ""
+	case string:
+		return v
+	case float64:
+		return strconv.FormatInt(int64(v), 10)
+	case json.Number:
+		return v.String()
+	default:
+		return fmt.Sprintf("%v", v)
+	}
 }
 
 func loadEnv(path string) map[string]string {
@@ -156,11 +171,11 @@ func main() {
 	}
 
 	if submitData.Status != 1 {
-		classifyError(submitData.Request)
+		classifyError(requestValue(submitData.Request))
 		os.Exit(1)
 	}
 
-	taskID := submitData.Request
+	taskID := requestValue(submitData.Request)
 	fmt.Printf("[+] Task submitted. ID: %s\n", taskID)
 
 	// Poll
@@ -204,7 +219,7 @@ func main() {
 		resp.Body.Close()
 
 		if resultData.Status == 1 {
-			token := resultData.Request
+			token := requestValue(resultData.Request)
 			truncated := token
 			if len(truncated) > 50 {
 				truncated = truncated[:50]
@@ -217,7 +232,7 @@ func main() {
 			os.Exit(0)
 		}
 
-		errCode := resultData.Request
+		errCode := requestValue(resultData.Request)
 		if errCode == "CAPCHA_NOT_READY" {
 			fmt.Printf("[*] Not ready yet, waiting %ds...\n", pollInterval)
 			time.Sleep(time.Duration(pollInterval) * time.Second)
