@@ -19,14 +19,14 @@ This example accompanies the blog article:
 
 | Parameter | Required | Description |
 |-----------|----------|-------------|
-| `gt` | Yes | Static GeeTest identifier for the site (find in page source or GeeTest init call) |
+| `gt` | Yes | Static GeeTest v3 identifier for the site (find in page source or GeeTest v3 init call) |
 | `challenge` | Yes | Dynamic challenge token — **must be fresh for each solve attempt** |
-| `pageurl` | Yes | Full URL of the page with the GeeTest widget |
-| `api_server` | No | GeeTest API server domain (e.g. `api.geetest.com`) |
+| `pageurl` | Yes | Full URL of the page with the GeeTest v3 widget |
+| `api_server` | No | GeeTest v3 API server domain (e.g. `api.geetest.com`) |
 
 ## Response
 
-The API returns three values that must be submitted together to the site's GeeTest verification endpoint:
+The API returns three values that must be submitted together to the site's GeeTest v3 verification endpoint:
 
 - `geetest_challenge` — the challenge string
 - `geetest_validate` — the validation token
@@ -131,9 +131,9 @@ bash solve.sh
 | Variable | Required | Default | Description |
 |----------|----------|---------|-------------|
 | `CAPTCHAAI_API_KEY` | Yes | — | Your CaptchaAI API key |
-| `CAPTCHA_GT` | Yes | — | GeeTest gt value (static per site) |
-| `CAPTCHA_CHALLENGE` | Yes | — | GeeTest challenge token (dynamic, must be fresh) |
+| `CAPTCHA_GT` | Yes | — | GeeTest v3 gt value (static per site) |
+| `CAPTCHA_CHALLENGE` | Yes | — | GeeTest v3 challenge token (dynamic, must be fresh) |
 | `CAPTCHA_PAGEURL` | Yes | — | Target page URL |
-| `CAPTCHA_API_SERVER` | No | *(empty)* | GeeTest API server domain |
+| `CAPTCHA_API_SERVER` | No | *(empty)* | GeeTest v3 API server domain |
 | `POLL_INTERVAL` | No | `5` | Seconds between result polls |
 | `MAX_TIMEOUT` | No | `120` | Maximum seconds to wait for a solution |
