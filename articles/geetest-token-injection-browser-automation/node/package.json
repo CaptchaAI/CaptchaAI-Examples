@@ -1,7 +1,7 @@
 {
   "name": "captchaai-example-geetest-token-injection-browser-automation",
   "version": "1.0.0",
-  "description": "GeeTest Token Injection in Browser Automation Frameworks - CaptchaAI example",
+  "description": "GeeTest v3 Token Injection in Browser Automation Frameworks - CaptchaAI example",
   "main": "solve.js",
   "scripts": {
     "start": "node solve.js"

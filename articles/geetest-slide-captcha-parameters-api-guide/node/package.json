@@ -1,7 +1,7 @@
 {
   "name": "captchaai-example-geetest-slide-captcha-parameters-api-guide",
   "version": "1.0.0",
-  "description": "GeeTest Slide CAPTCHA Parameters and API Guide - CaptchaAI example",
+  "description": "GeeTest v3 Slide CAPTCHA Parameters and API Guide - CaptchaAI example",
   "main": "solve.js",
   "scripts": {
     "start": "node solve.js"

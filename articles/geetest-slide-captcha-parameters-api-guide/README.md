@@ -1,4 +1,4 @@
-﻿# GeeTest Slide CAPTCHA Parameters and API Guide
+﻿# GeeTest v3 Slide CAPTCHA Parameters and API Guide
 
 Full working example for solving GeeTest v3 using the CaptchaAI API.
 
@@ -7,7 +7,7 @@ Full working example for solving GeeTest v3 using the CaptchaAI API.
 ## Related article
 
 This example accompanies the blog article:
-**[GeeTest Slide CAPTCHA Parameters and API Guide](https://blog.captchaai.com/geetest-slide-captcha-parameters-api-guide)**
+**[GeeTest v3 Slide CAPTCHA Parameters and API Guide](https://blog.captchaai.com/geetest-slide-captcha-parameters-api-guide)**
 
 ## Prerequisites
 

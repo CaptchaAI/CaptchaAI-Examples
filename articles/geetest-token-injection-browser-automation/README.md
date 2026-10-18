@@ -1,4 +1,4 @@
-﻿# GeeTest Token Injection in Browser Automation Frameworks
+﻿# GeeTest v3 Token Injection in Browser Automation Frameworks
 
 Full working example for solving GeeTest v3 using the CaptchaAI API.
 
@@ -7,7 +7,7 @@ Full working example for solving GeeTest v3 using the CaptchaAI API.
 ## Related article
 
 This example accompanies the blog article:
-**[GeeTest Token Injection in Browser Automation Frameworks](https://blog.captchaai.com/geetest-token-injection-browser-automation)**
+**[GeeTest v3 Token Injection in Browser Automation Frameworks](https://blog.captchaai.com/geetest-token-injection-browser-automation)**
 
 ## Prerequisites
 
