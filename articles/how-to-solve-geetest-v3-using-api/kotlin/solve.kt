@@ -142,7 +142,7 @@ fun main() {
     }
     if (gt.isEmpty() || gt == "YOUR_GT_VALUE") {
         println("[!] ERROR: CAPTCHA_GT is not set.")
-        println("    Find the gt value in the page source or GeeTest initialization call.")
+        println("    Find the gt value in the page source or GeeTest v3 initialization call.")
         System.exit(1)
     }
     if (challenge.isEmpty() || challenge == "YOUR_CHALLENGE_VALUE") {
@@ -208,7 +208,7 @@ fun main() {
         val status = jsonInt(resultResp, "status")
 
         if (status == 1) {
-            // The request field contains a JSON string or object with the 3 GeeTest values
+            // The request field contains a JSON string or object with the 3 GeeTest v3 values
             val solutionJson = extractRequestJson(resultResp)
             val geetestChallenge = jsonStr(solutionJson, "geetest_challenge")
             val geetestValidate = jsonStr(solutionJson, "geetest_validate")
@@ -219,7 +219,7 @@ fun main() {
             println("[+] geetest_seccode: $geetestSeccode")
             println()
             println("Next step: submit these three values to the site's")
-            println("GeeTest verification endpoint.")
+            println("GeeTest v3 verification endpoint.")
             return
         }
 

@@ -154,7 +154,7 @@ func main() {
 	}
 	if gt == "" || gt == "YOUR_GT_VALUE" {
 		fmt.Println("[!] ERROR: CAPTCHA_GT is not set.")
-		fmt.Println("    Find the gt value in the page source or GeeTest initialization call.")
+		fmt.Println("    Find the gt value in the page source or GeeTest v3 initialization call.")
 		os.Exit(1)
 	}
 	if challenge == "" || challenge == "YOUR_CHALLENGE_VALUE" {
@@ -250,7 +250,7 @@ func main() {
 			fmt.Printf("[+] geetest_seccode: %s\n", solution.GeetestSeccode)
 			fmt.Println()
 			fmt.Println("Next step: submit these three values to the site's")
-			fmt.Println("GeeTest verification endpoint.")
+			fmt.Println("GeeTest v3 verification endpoint.")
 			return
 		}
 

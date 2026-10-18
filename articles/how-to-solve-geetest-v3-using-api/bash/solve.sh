@@ -35,7 +35,7 @@ if [[ -z "$API_KEY" || "$API_KEY" == "YOUR_API_KEY" ]]; then
 fi
 if [[ -z "$GT" || "$GT" == "YOUR_GT_VALUE" ]]; then
   echo "[!] ERROR: CAPTCHA_GT is not set."
-  echo "    Find the gt value in the page source or GeeTest initialization call."
+  echo "    Find the gt value in the page source or GeeTest v3 initialization call."
   exit 1
 fi
 if [[ -z "$CHALLENGE" || "$CHALLENGE" == "YOUR_CHALLENGE_VALUE" ]]; then
@@ -142,7 +142,7 @@ while [[ "$ELAPSED" -lt "$MAX_TIMEOUT" ]]; do
   STATUS=$(json_int "$POLL_RESP" "status")
 
   if [[ "$STATUS" -eq 1 ]]; then
-    # Extract the 3 GeeTest values from the response
+    # Extract the 3 GeeTest v3 values from the response
     # The request field contains a JSON object with geetest_challenge, geetest_validate, geetest_seccode
     GEETEST_CHALLENGE=$(echo "$POLL_RESP" | grep -oP '"geetest_challenge"\s*:\s*"\\K[^"]*' || echo "")
     GEETEST_VALIDATE=$(echo "$POLL_RESP" | grep -oP '"geetest_validate"\s*:\s*"\\K[^"]*' || echo "")
@@ -164,7 +164,7 @@ while [[ "$ELAPSED" -lt "$MAX_TIMEOUT" ]]; do
     echo "[+] geetest_seccode: $GEETEST_SECCODE"
     echo
     echo "Next step: submit these three values to the site's"
-    echo "GeeTest verification endpoint."
+    echo "GeeTest v3 verification endpoint."
     exit 0
   fi
 

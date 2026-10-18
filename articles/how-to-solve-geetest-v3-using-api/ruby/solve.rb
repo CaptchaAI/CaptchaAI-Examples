@@ -54,7 +54,7 @@ if api_key.empty? || api_key == "YOUR_API_KEY"
 end
 if gt.empty? || gt == "YOUR_GT_VALUE"
   puts "[!] ERROR: CAPTCHA_GT is not set."
-  puts "    Find the gt value in the page source or GeeTest initialization call."
+  puts "    Find the gt value in the page source or GeeTest v3 initialization call."
   exit 1
 end
 if challenge.empty? || challenge == "YOUR_CHALLENGE_VALUE"
@@ -153,7 +153,7 @@ while elapsed < max_timeout
   end
 
   if result_data["status"] == 1
-    # The request field contains a JSON string or object with the 3 GeeTest values
+    # The request field contains a JSON string or object with the 3 GeeTest v3 values
     solution = result_data["request"]
     solution = JSON.parse(solution) if solution.is_a?(String)
     puts "[+] Solved!"
@@ -162,7 +162,7 @@ while elapsed < max_timeout
     puts "[+] geetest_seccode: #{solution['geetest_seccode']}"
     puts
     puts "Next step: submit these three values to the site's"
-    puts "GeeTest verification endpoint."
+    puts "GeeTest v3 verification endpoint."
     exit 0
   end
 

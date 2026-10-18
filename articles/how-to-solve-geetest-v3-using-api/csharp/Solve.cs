@@ -39,7 +39,7 @@ if (string.IsNullOrEmpty(apiKey) || apiKey == "YOUR_API_KEY")
 if (string.IsNullOrEmpty(gt) || gt == "YOUR_GT_VALUE")
 {
     Console.WriteLine("[!] ERROR: CAPTCHA_GT is not set.");
-    Console.WriteLine("    Find the gt value in the page source or GeeTest initialization call.");
+    Console.WriteLine("    Find the gt value in the page source or GeeTest v3 initialization call.");
     Environment.Exit(1);
 }
 if (string.IsNullOrEmpty(challenge) || challenge == "YOUR_CHALLENGE_VALUE")
@@ -124,7 +124,7 @@ while (elapsed < maxTimeout)
 
     if (status == 1)
     {
-        // The request field contains a JSON string or object with the 3 GeeTest values
+        // The request field contains a JSON string or object with the 3 GeeTest v3 values
         JsonDocument solutionDoc;
         if (requestElement.ValueKind == JsonValueKind.String)
         {
@@ -146,7 +146,7 @@ while (elapsed < maxTimeout)
         Console.WriteLine($"[+] geetest_seccode: {geetestSeccode}");
         Console.WriteLine();
         Console.WriteLine("Next step: submit these three values to the site's");
-        Console.WriteLine("GeeTest verification endpoint.");
+        Console.WriteLine("GeeTest v3 verification endpoint.");
         return;
     }
 

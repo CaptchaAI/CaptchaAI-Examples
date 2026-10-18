@@ -40,7 +40,7 @@ function validateConfig() {
   }
   if (!CAPTCHA_GT || CAPTCHA_GT === "YOUR_GT_VALUE") {
     console.log("[!] ERROR: CAPTCHA_GT is not set.");
-    console.log("    Find the gt value in the page source or GeeTest initialization call.");
+    console.log("    Find the gt value in the page source or GeeTest v3 initialization call.");
     process.exit(1);
   }
   if (!CAPTCHA_CHALLENGE || CAPTCHA_CHALLENGE === "YOUR_CHALLENGE_VALUE") {
@@ -130,7 +130,7 @@ async function pollResult(taskId) {
     const data = resp.data;
 
     if (data.status === 1) {
-      // The request field contains a JSON string with the 3 GeeTest values
+      // The request field contains a JSON string with the 3 GeeTest v3 values
       let solution = data.request;
       if (typeof solution === "string") {
         solution = JSON.parse(solution);
@@ -179,7 +179,7 @@ async function main() {
   console.log(`[+] geetest_seccode: ${solution.geetest_seccode}`);
   console.log();
   console.log("Next step: submit these three values to the site's");
-  console.log("GeeTest verification endpoint.");
+  console.log("GeeTest v3 verification endpoint.");
 }
 
 main();

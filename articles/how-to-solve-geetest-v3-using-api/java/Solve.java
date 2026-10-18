@@ -41,7 +41,7 @@ public class Solve {
         }
         if (gt.isEmpty() || gt.equals("YOUR_GT_VALUE")) {
             System.out.println("[!] ERROR: CAPTCHA_GT is not set.");
-            System.out.println("    Find the gt value in the page source or GeeTest initialization call.");
+            System.out.println("    Find the gt value in the page source or GeeTest v3 initialization call.");
             System.exit(1);
         }
         if (challenge.isEmpty() || challenge.equals("YOUR_CHALLENGE_VALUE")) {
@@ -107,7 +107,7 @@ public class Solve {
             int status = jsonInt(resultResp, "status");
 
             if (status == 1) {
-                // The request field contains a JSON object with the 3 GeeTest values
+                // The request field contains a JSON object with the 3 GeeTest v3 values
                 // Extract the JSON object from the request field
                 String requestValue = extractRequestValue(resultResp);
                 String geetestChallenge = jsonStr(requestValue, "geetest_challenge");
@@ -119,7 +119,7 @@ public class Solve {
                 System.out.println("[+] geetest_seccode: " + geetestSeccode);
                 System.out.println();
                 System.out.println("Next step: submit these three values to the site's");
-                System.out.println("GeeTest verification endpoint.");
+                System.out.println("GeeTest v3 verification endpoint.");
                 return;
             }
 
