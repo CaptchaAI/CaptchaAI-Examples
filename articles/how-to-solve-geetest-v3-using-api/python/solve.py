@@ -45,7 +45,7 @@ def validate_config() -> None:
         sys.exit(1)
     if not CAPTCHA_GT or CAPTCHA_GT == "YOUR_GT_VALUE":
         print("[!] ERROR: CAPTCHA_GT is not set.")
-        print("    Find the gt value in the page source or GeeTest initialization call.")
+        print("    Find the gt value in the page source or GeeTest v3 initialization call.")
         sys.exit(1)
     if not CAPTCHA_CHALLENGE or CAPTCHA_CHALLENGE == "YOUR_CHALLENGE_VALUE":
         print("[!] ERROR: CAPTCHA_CHALLENGE is not set.")
@@ -135,7 +135,7 @@ def poll_result(task_id: str) -> dict:
         data = resp.json()
 
         if data.get("status") == 1:
-            # The request field contains a JSON string with the 3 GeeTest values
+            # The request field contains a JSON string with the 3 GeeTest v3 values
             solution = data["request"]
             if isinstance(solution, str):
                 solution = json.loads(solution)
@@ -178,7 +178,7 @@ def main() -> None:
     print(f"[+] geetest_seccode: {solution['geetest_seccode']}")
     print()
     print("Next step: submit these three values to the site's")
-    print("GeeTest verification endpoint.")
+    print("GeeTest v3 verification endpoint.")
 
 
 if __name__ == "__main__":

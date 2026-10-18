@@ -39,7 +39,7 @@ if (empty($apiKey) || $apiKey === 'YOUR_API_KEY') {
 }
 if (empty($gt) || $gt === 'YOUR_GT_VALUE') {
     echo "[!] ERROR: CAPTCHA_GT is not set.\n";
-    echo "    Find the gt value in the page source or GeeTest initialization call.\n";
+    echo "    Find the gt value in the page source or GeeTest v3 initialization call.\n";
     exit(1);
 }
 if (empty($challenge) || $challenge === 'YOUR_CHALLENGE_VALUE') {
@@ -129,7 +129,7 @@ while ($elapsed < $maxTimeout) {
     $resultData = json_decode($resultResponse, true);
 
     if (($resultData['status'] ?? 0) === 1) {
-        // The request field contains a JSON string with the 3 GeeTest values
+        // The request field contains a JSON string with the 3 GeeTest v3 values
         $solution = $resultData['request'];
         if (is_string($solution)) {
             $solution = json_decode($solution, true);
@@ -140,7 +140,7 @@ while ($elapsed < $maxTimeout) {
         echo "[+] geetest_seccode: " . $solution['geetest_seccode'] . "\n";
         echo "\n";
         echo "Next step: submit these three values to the site's\n";
-        echo "GeeTest verification endpoint.\n";
+        echo "GeeTest v3 verification endpoint.\n";
         exit(0);
     }
 

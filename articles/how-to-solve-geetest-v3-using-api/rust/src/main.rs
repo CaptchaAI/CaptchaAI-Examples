@@ -137,7 +137,7 @@ fn main() {
     }
     if gt.is_empty() || gt == "YOUR_GT_VALUE" {
         println!("[!] ERROR: CAPTCHA_GT is not set.");
-        println!("    Find the gt value in the page source or GeeTest initialization call.");
+        println!("    Find the gt value in the page source or GeeTest v3 initialization call.");
         std::process::exit(1);
     }
     if challenge.is_empty() || challenge == "YOUR_CHALLENGE_VALUE" {
@@ -219,7 +219,7 @@ fn main() {
         let status = json_int(&result_resp, "status");
 
         if status == 1 {
-            // The request field contains a JSON string or object with the 3 GeeTest values
+            // The request field contains a JSON string or object with the 3 GeeTest v3 values
             let solution_json = extract_request_json(&result_resp);
             let geetest_challenge = json_str(&solution_json, "geetest_challenge");
             let geetest_validate = json_str(&solution_json, "geetest_validate");
@@ -230,7 +230,7 @@ fn main() {
             println!("[+] geetest_seccode: {}", geetest_seccode);
             println!();
             println!("Next step: submit these three values to the site's");
-            println!("GeeTest verification endpoint.");
+            println!("GeeTest v3 verification endpoint.");
             return;
         }
 
